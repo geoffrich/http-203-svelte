@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>HTTP 203</title>
+	<title>HTTP 203 - {selectedCohost[0].toUpperCase() + selectedCohost.slice(1)}</title>
 </svelte:head>
 
 <div>

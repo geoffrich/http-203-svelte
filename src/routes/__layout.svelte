@@ -1,0 +1,80 @@
+<script>
+	import '../app.css';
+	let showBackIcon = true;
+</script>
+
+<div class="main-layout">
+	<header class="header" class:show-back-icon={showBackIcon}>
+		<a href="/" class="home-link">
+			<svg class="back-icon" viewBox="0 0 24 24">
+				<path d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20v-2z" />
+			</svg>
+			<span class="header-text">HTTP 203</span>
+		</a>
+	</header>
+	<div class="main">
+		<slot />
+	</div>
+</div>
+
+<style lang="postcss">
+	.main-layout {
+		height: 100%;
+		display: grid;
+		grid-template-rows: auto 1fr;
+	}
+
+	.header {
+		background: var(--primary-color);
+		color: var(--white);
+		height: 54px;
+		display: grid;
+		align-items: center;
+		padding: 0 var(--content-padding);
+		contain: paint;
+		page-transition-tag: site-header;
+	}
+
+	.show-back-icon.header {
+		padding: 0 10px;
+	}
+
+	.main {
+		overflow-x: hidden;
+		overflow-y: auto;
+		display: grid;
+		grid-template-columns: 100%;
+
+		@media (min-width: 900px) {
+			display: block;
+		}
+	}
+
+	.home-link {
+		fill: var(--white);
+		color: inherit;
+		width: max-content;
+		contain: paint;
+	}
+
+	.show-back-icon .home-link {
+		display: grid;
+		grid-template-columns: 31px 1fr;
+		align-items: center;
+		gap: 0.3rem;
+	}
+
+	.back-icon {
+		display: none;
+	}
+
+	.show-back-icon .back-icon {
+		display: block;
+	}
+
+	.header-text {
+		display: block;
+		contain: paint;
+		page-transition-tag: header-text;
+	}
+</style>
