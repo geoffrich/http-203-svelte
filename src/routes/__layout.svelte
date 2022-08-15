@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	let showBackIcon = true;
+	let showBackIcon = true; // TODO: set based on whether we're on a video route
 </script>
 
 <div class="main-layout">
