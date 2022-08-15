@@ -1,6 +1,26 @@
+<script context="module">
+	/** @type { import('./__types/__layout').Load} */
+	export const load = async ({ fetch }) => {
+		// fetch in the layout and throw into a context since a bunch of disparate endpoints need this data
+		// layout endpoint/$data store will make this easier
+		const videos = await fetch('/videos.json').then((v) => v.json());
+		return {
+			props: {
+				videos
+			}
+		};
+	};
+</script>
+
 <script>
 	import '../app.css';
+	import { setContext } from 'svelte';
 	import { page } from '$app/stores';
+
+	export let videos;
+
+	setContext('videos', videos);
+
 	$: showBackIcon = $page.url.href.includes('/videos');
 </script>
 

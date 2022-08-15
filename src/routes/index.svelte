@@ -2,8 +2,9 @@
 	import CohostSwitch from '$lib/CohostSwitch.svelte';
 	import { page } from '$app/stores';
 	import VideoList from '$lib/VideoList.svelte';
+	import { getContext } from 'svelte';
 
-	export let videos;
+	const videos = getContext('videos');
 
 	$: selectedCohost = $page.params.cohost;
 </script>

@@ -2,10 +2,14 @@
 	import CohostSwitch from '$lib/CohostSwitch.svelte';
 	import { page } from '$app/stores';
 	import VideoList from '$lib/VideoList.svelte';
+	import { getContext } from 'svelte';
 
-	export let videos;
+	const videos = getContext('videos');
 
 	$: selectedCohost = $page.params.cohost;
+	$: filteredVideos = Object.fromEntries(
+		Object.entries(videos).filter(([_, data]) => data.cohost.toLowerCase() === selectedCohost)
+	);
 </script>
 
 <svelte:head>
@@ -14,5 +18,5 @@
 
 <div>
 	<CohostSwitch {selectedCohost} />
-	<VideoList {videos} />
+	<VideoList videos={filteredVideos} />
 </div>
