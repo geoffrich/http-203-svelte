@@ -1,28 +1,94 @@
 <script>
-	import { pageTransitionType, TransitionType } from './page-transition';
+	import { onDestroy, onMount } from 'svelte';
+
+	import {
+		pageTransitionType,
+		TransitionType,
+		beforePageTransition,
+		afterPageTransition,
+		whileIncomingTransition
+	} from './page-transition';
 
 	import { formatDate, ytSrcset } from './utils';
 	export let videos;
+
+	/** @type {HTMLElement} */
+	let list;
+
+	/** @type {HTMLElement[]} */
+	let elementsToCleanup = [];
+
+	const cleanupBefore = beforePageTransition(({ from, to, type }) => {
+		console.log('before page tr');
+
+		if (type === TransitionType.ThumbsToVideo) {
+			// TODO: make this state driven?
+			// limited by the fact that it needs to work synchronously
+			// any component state needs to wait a tick to apply, and we don't have that time
+			// so we need to interact with the DOM elements directly
+
+			/** @type {HTMLElement?} */
+			const thumb = list.querySelector(`a[href="${to.pathname}"] .video-thumb`);
+			/** @type {HTMLElement?} */
+			const details = list.querySelector(`a[href="${to.pathname}"] .video-meta`);
+
+			if (thumb && details) {
+				elementsToCleanup.push(thumb, details);
+				thumb.style.pageTransitionTag = 'embed-container';
+				details.style.pageTransitionTag = 'video-details';
+			}
+		}
+	});
+
+	// TODO: does this actually run?
+	const cleanupAfter = afterPageTransition(({ from, to }) => {
+		while (elementsToCleanup.length) {
+			const el = elementsToCleanup.pop();
+			console.log(el);
+			el.style.pageTransitionTag = '';
+		}
+	});
+
+	const cleanupIncoming = whileIncomingTransition(({ from, to, type }) => {
+		if (type === TransitionType.VideoToThumbs) {
+			// TODO: make this state driven?
+			// limited by the fact that it needs to work synchronously
+			// any component state needs to wait a tick to apply, and we don't have that time
+			// so we need to interact with the DOM elements directly
+			// at the least, bind directly to the element to avoid scoping issues
+
+			/** @type {HTMLElement?} */
+			const thumb =
+				list.querySelector(`a[href="${from.pathname}"] .video-thumb`) ||
+				list.querySelector('.video-thumb');
+			/** @type {HTMLElement?} */
+			const details =
+				list.querySelector(`a[href="${from.pathname}"] .video-meta`) ||
+				list.querySelector('.video-thumb');
+
+			if (thumb && details) {
+				elementsToCleanup.push(thumb, details);
+				thumb.style.pageTransitionTag = 'embed-container';
+				details.style.pageTransitionTag = 'video-details';
+			}
+		}
+	});
+
+	// TODO: better way to handle this?
+	// can we self register, assuming these methods are called at init?
+	onDestroy(() => {
+		cleanupBefore();
+		cleanupAfter();
+		cleanupIncoming();
+	});
 </script>
 
-<ol class="video-list">
+<ol class="video-list" bind:this={list}>
 	{#each Object.entries(videos) as [slug, video]}
 		<li>
-			<a class="video-link" href={`/videos/${slug}/`}>
-				<img
-					class="video-thumb"
-					srcset={ytSrcset(video.id)}
-					alt={video.title}
-					style:page-transition-tag={$pageTransitionType === TransitionType.ThumbsToVideo
-						? 'embed-container'
-						: ''}
-				/>
-				<p
-					class="video-meta"
-					style:page-transition-tag={$pageTransitionType === TransitionType.ThumbsToVideo
-						? 'video-details'
-						: ''}
-				>
+			<a class="video-link" href={`/videos/${slug}`}>
+				<img class="video-thumb" srcset={ytSrcset(video.id)} alt={video.title} />
+				<p class="video-meta">
 					<time>{formatDate(new Date(video.published))}</time>
 				</p>
 			</a>

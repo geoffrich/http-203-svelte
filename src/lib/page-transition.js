@@ -34,6 +34,34 @@ function getNavigationStore() {
 	return navigation;
 }
 
+const beforeCallbacks = new Set(); // before transition starts
+const afterCallbacks = new Set(); // after transition has completed
+const incomingCallbacks = new Set(); // when new page is loaded but transition has not completed
+
+export const beforePageTransition = (fn) => {
+	beforeCallbacks.add(fn);
+
+	return () => {
+		beforeCallbacks.delete(fn);
+	};
+};
+
+export const whileIncomingTransition = (fn) => {
+	incomingCallbacks.add(fn);
+
+	return () => {
+		incomingCallbacks.delete(fn);
+	};
+};
+
+export const afterPageTransition = (fn) => {
+	afterCallbacks.add(fn);
+
+	return () => {
+		afterCallbacks.delete(fn);
+	};
+};
+
 export const preparePageTransition = () => {
 	const navigation = getNavigationStore();
 	let isReducedMotionEnabled;
@@ -41,20 +69,31 @@ export const preparePageTransition = () => {
 	let unsubReducedMotion = reducedMotion.subscribe((val) => (isReducedMotionEnabled = val));
 
 	// before navigating, start a new transition
-	beforeNavigate(() => {
+	beforeNavigate(({ from, to }) => {
 		console.log('before');
+
 		// Feature detection
 		if (!document.createDocumentTransition || isReducedMotionEnabled) {
 			return;
 		}
 
+		// TODO: make this configurable
+		const type = getPageTransitionType(from.pathname, to?.pathname ?? '');
 		try {
 			const transition = document.createDocumentTransition();
+			const payload = { from, to, type };
+			beforeCallbacks.forEach((fn) => fn(payload));
 			// init before transition.start so the promise doesn't resolve early
 			const navigationComplete = navigation.complete();
-			transition.start(async () => {
-				await navigationComplete;
-			});
+			transition
+				.start(async () => {
+					console.log('starting tr');
+					await navigationComplete;
+					incomingCallbacks.forEach((fn) => fn(payload));
+				})
+				.then(() => {
+					afterCallbacks.forEach((fn) => fn(payload));
+				});
 		} catch (e) {
 			// without the catch, we could throw in beforeNavigate and prevent navigation
 			console.error(e);
