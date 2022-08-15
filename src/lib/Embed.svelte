@@ -1,10 +1,20 @@
 <script>
+	import { afterNavigate, beforeNavigate } from '$app/navigation';
+
 	import { ytSrcset } from '$lib/utils';
 
 	export let video;
 
 	let renderIframe = true;
 	let iframeReady = false;
+
+	// beforeNavigate(() => {
+	// 	renderIframe = false;
+	// });
+
+	// afterNavigate(() => {
+	// 	renderIframe = true;
+	// });
 
 	/* // TODO: not sure if I need an equivalent
     useEffect(() => {

@@ -1,4 +1,6 @@
 <script>
+	import { pageTransitionType, TransitionType } from './page-transition';
+
 	import { formatDate, ytSrcset } from './utils';
 	export let videos;
 </script>
@@ -7,8 +9,20 @@
 	{#each Object.entries(videos) as [slug, video]}
 		<li>
 			<a class="video-link" href={`/videos/${slug}/`}>
-				<img class="video-thumb" srcset={ytSrcset(video.id)} alt={video.title} />
-				<p class="video-meta">
+				<img
+					class="video-thumb"
+					srcset={ytSrcset(video.id)}
+					alt={video.title}
+					style:page-transition-tag={$pageTransitionType === TransitionType.ThumbsToVideo
+						? 'embed-container'
+						: ''}
+				/>
+				<p
+					class="video-meta"
+					style:page-transition-tag={$pageTransitionType === TransitionType.ThumbsToVideo
+						? 'video-details'
+						: ''}
+				>
 					<time>{formatDate(new Date(video.published))}</time>
 				</p>
 			</a>

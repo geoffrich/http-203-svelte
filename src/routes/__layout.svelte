@@ -15,11 +15,53 @@
 <script>
 	import '../app.css';
 	import { setContext } from 'svelte';
-	import { page } from '$app/stores';
+	import { page, navigating } from '$app/stores';
+	import {
+		preparePageTransition,
+		pageTransitionType,
+		TransitionType,
+		getPageTransitionType
+	} from '$lib/page-transition';
+	import { browser } from '$app/env';
+	import { beforeNavigate } from '$app/navigation';
 
 	export let videos;
 
 	setContext('videos', videos);
+
+	// TODO: add classes/transition tags in beforeNavigate to avoid timing issues
+	// then see if there's a more declarative way to refactor
+	beforeNavigate(({ from: fromUrl, to: toUrl }) => {
+		const from = fromUrl.pathname;
+		const to = toUrl?.pathname ?? '';
+
+		pageTransitionType.set(getPageTransitionType(from, to));
+	});
+
+	preparePageTransition();
+
+	$: console.log($navigating);
+	$: console.log($pageTransitionType);
+
+	$: switch ($pageTransitionType) {
+		case TransitionType.ThumbsToVideo:
+			document.documentElement.classList.add('transition-home-to-video');
+			break;
+		case TransitionType.VideoToThumbs:
+			document.documentElement.classList.add('transition-video-to-home');
+			break;
+		case TransitionType.VideoToVideo:
+			document.documentElement.classList.add('transition-video-to-video');
+		default:
+			if (browser) {
+				document.documentElement.classList.remove(
+					'back-transition',
+					'transition-home-to-video',
+					'transition-video-to-home',
+					'transition-video-to-video'
+				);
+			}
+	}
 
 	$: showBackIcon = $page.url.href.includes('/videos');
 </script>
