@@ -1,6 +1,7 @@
 <script>
 	import '../app.css';
-	let showBackIcon = true; // TODO: set based on whether we're on a video route
+	import { page } from '$app/stores';
+	$: showBackIcon = $page.url.href.includes('/videos');
 </script>
 
 <div class="main-layout">
