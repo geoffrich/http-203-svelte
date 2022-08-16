@@ -22,7 +22,7 @@ function getNavigationStore() {
 		if (n === null) {
 			while (callbacks.length > 0) {
 				const res = callbacks.pop();
-				res();
+				res?.();
 			}
 		}
 	});
@@ -34,44 +34,56 @@ function getNavigationStore() {
 	return navigation;
 }
 
+/**
+ * @callback pageTransitionCallback
+ * @param {{ from: URL, to: URL, type: TransitionType}} nav
+ */
+
 const beforeCallbacks = new Set(); // before transition starts
 const afterCallbacks = new Set(); // after transition has completed
 const incomingCallbacks = new Set(); // when new page is loaded but transition has not completed
 
+/**
+ * @param {pageTransitionCallback} fn
+ */
 export const beforePageTransition = (fn) => {
 	beforeCallbacks.add(fn);
 
-	return () => {
+	onDestroy(() => {
 		beforeCallbacks.delete(fn);
-	};
+	});
 };
 
+/**
+ * @param {pageTransitionCallback} fn
+ */
 export const whileIncomingTransition = (fn) => {
 	incomingCallbacks.add(fn);
 
-	return () => {
+	onDestroy(() => {
 		incomingCallbacks.delete(fn);
-	};
+	});
 };
 
+/**
+ * @param {pageTransitionCallback} fn
+ */
 export const afterPageTransition = (fn) => {
 	afterCallbacks.add(fn);
 
-	return () => {
+	onDestroy(() => {
 		afterCallbacks.delete(fn);
-	};
+	});
 };
 
 export const preparePageTransition = () => {
 	const navigation = getNavigationStore();
-	let isReducedMotionEnabled;
+	let isReducedMotionEnabled = false;
 
 	let unsubReducedMotion = reducedMotion.subscribe((val) => (isReducedMotionEnabled = val));
 
 	// before navigating, start a new transition
 	beforeNavigate(({ from, to }) => {
-		console.log('before');
-
 		// Feature detection
 		if (!document.createDocumentTransition || isReducedMotionEnabled) {
 			return;
@@ -87,7 +99,6 @@ export const preparePageTransition = () => {
 			const navigationComplete = navigation.complete();
 			transition
 				.start(async () => {
-					console.log('starting tr');
 					await navigationComplete;
 					incomingCallbacks.forEach((fn) => fn(payload));
 				})
@@ -105,6 +116,9 @@ export const preparePageTransition = () => {
 	});
 };
 
+/**
+ * @enum {string}
+ */
 export const TransitionType = {
 	ThumbsToVideo: 'thumbstovideo',
 	VideoToThumbs: 'videotothumbs',
@@ -113,26 +127,13 @@ export const TransitionType = {
 	Other: 'other'
 };
 
-// export const pageTransitionType = derived(navigating, ($navigating) => {
-// 	if ($navigating) {
-// 		const { from: fromUrl, to: toUrl } = $navigating;
-// 		const from = fromUrl.pathname;
-// 		const to = toUrl.pathname;
-// 		return getPageTransitionType(from, to);
-// 	}
-
-// 	return undefined;
-// });
-
-export const pageTransitionType = writable('');
-
 /**
  *
  * @param {string} from
  * @param {string} to
  * @returns {string}
  */
-export function getPageTransitionType(from, to) {
+function getPageTransitionType(from, to) {
 	if (to.startsWith('/videos/') && (from === '/' || from.startsWith('/with-'))) {
 		return TransitionType.ThumbsToVideo;
 	}

@@ -1,8 +1,5 @@
 <script>
-	import { onDestroy, onMount } from 'svelte';
-
 	import {
-		pageTransitionType,
 		TransitionType,
 		beforePageTransition,
 		afterPageTransition,
@@ -18,15 +15,8 @@
 	/** @type {HTMLElement[]} */
 	let elementsToCleanup = [];
 
-	const cleanupBefore = beforePageTransition(({ from, to, type }) => {
-		console.log('before page tr');
-
+	beforePageTransition(({ to, type }) => {
 		if (type === TransitionType.ThumbsToVideo) {
-			// TODO: make this state driven?
-			// limited by the fact that it needs to work synchronously
-			// any component state needs to wait a tick to apply, and we don't have that time
-			// so we need to interact with the DOM elements directly
-
 			/** @type {HTMLElement?} */
 			const thumb = list.querySelector(`a[href="${to.pathname}"] .video-thumb`);
 			/** @type {HTMLElement?} */
@@ -40,16 +30,7 @@
 		}
 	});
 
-	// TODO: does this actually run?
-	const cleanupAfter = afterPageTransition(({ from, to }) => {
-		while (elementsToCleanup.length) {
-			const el = elementsToCleanup.pop();
-			console.log(el);
-			el.style.pageTransitionTag = '';
-		}
-	});
-
-	const cleanupIncoming = whileIncomingTransition(({ from, to, type }) => {
+	whileIncomingTransition(({ from, type }) => {
 		if (type === TransitionType.VideoToThumbs) {
 			// TODO: make this state driven?
 			// limited by the fact that it needs to work synchronously
@@ -74,12 +55,13 @@
 		}
 	});
 
-	// TODO: better way to handle this?
-	// can we self register, assuming these methods are called at init?
-	onDestroy(() => {
-		cleanupBefore();
-		cleanupAfter();
-		cleanupIncoming();
+	afterPageTransition(({ from, to }) => {
+		while (elementsToCleanup.length) {
+			const el = elementsToCleanup.pop();
+			if (el) {
+				el.style.pageTransitionTag = '';
+			}
+		}
 	});
 </script>
 

@@ -15,15 +15,17 @@
 <script>
 	import '../app.css';
 	import { setContext } from 'svelte';
-	import { page, navigating } from '$app/stores';
 	import {
 		preparePageTransition,
 		TransitionType,
 		beforePageTransition,
-		afterPageTransition
+		afterPageTransition,
+		whileIncomingTransition
 	} from '$lib/page-transition';
 
 	export let videos;
+
+	let showBackIcon = false;
 
 	setContext('videos', videos);
 
@@ -42,6 +44,16 @@
 		}
 	});
 
+	whileIncomingTransition(({ to }) => {
+		// This feels hacky, but it seems to work
+		// Previously, showBackIcon was derived from $page.url.pathname
+		// However, this caused a race condition where the $page store updated
+		// before the transition started, causing the back icon to disappear too soon
+		// This will likely be an issue with any shared component on the page that needs to be
+		// derived from the URL and wants to participate in the transition
+		showBackIcon = to.pathname.includes('/videos');
+	});
+
 	afterPageTransition(() => {
 		document.documentElement.classList.remove(
 			'back-transition',
@@ -50,8 +62,6 @@
 			'transition-video-to-video'
 		);
 	});
-
-	$: showBackIcon = $page.url.href.includes('/videos');
 </script>
 
 <div class="main-layout">
