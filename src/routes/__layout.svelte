@@ -22,13 +22,15 @@
 		afterPageTransition,
 		whileIncomingTransition
 	} from '$lib/page-transition';
+	import { page } from '$app/stores';
 
 	export let videos;
 
-	let showBackIcon = false;
+	let showBackIcon = $page.url.pathname.includes('/videos');
 
 	setContext('videos', videos);
 
+	// TODO: figure out weird bug with history stack updating twice
 	preparePageTransition();
 
 	beforePageTransition(({ type }) => {
@@ -42,9 +44,11 @@
 			case TransitionType.VideoToVideo:
 				document.documentElement.classList.add('transition-video-to-video');
 		}
+		// TODO: apply back transition, somehow
 	});
 
 	whileIncomingTransition(({ to }) => {
+		// TODO: this doesn't run if browser doesn't support transitions
 		// This feels hacky, but it seems to work
 		// Previously, showBackIcon was derived from $page.url.pathname
 		// However, this caused a race condition where the $page store updated

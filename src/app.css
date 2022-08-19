@@ -3,10 +3,7 @@
 	--primary-text: #212121;
 	--secondary-text: #757575;
 	--divider: #bdbdbd;
-	--primary-color: #673ab7;
-	--primary-dark: #512da8;
-	--primary-light: #d1c4e9;
-	--accent-color: #ff9800;
+	--primary-color: #ff3e00;
 	--content-padding: 1.2rem;
 }
 
@@ -107,7 +104,7 @@ a {
 
 html.transition-home-to-video::page-transition-container(embed-container),
 html.transition-video-to-home::page-transition-container(embed-container) {
-	animation-duration: 300ms;
+	animation-duration: 300ms; /* TODO: slider that configures this */
 	animation-timing-function: ease-out;
 	z-index: 1;
 }

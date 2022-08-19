@@ -2,6 +2,7 @@ import data from './data.json';
 import { marked } from 'marked';
 import DOMPurify from 'isomorphic-dompurify';
 
+// TODO: use Svelte Society data
 function processData() {
 	const entries = data.map((dataItem) => {
 		const title = dataItem.snippet.title
