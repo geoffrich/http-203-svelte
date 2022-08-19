@@ -2,9 +2,8 @@
 	import CohostSwitch from '$lib/CohostSwitch.svelte';
 	import { page } from '$app/stores';
 	import VideoList from '$lib/VideoList.svelte';
-	import { getContext } from 'svelte';
 
-	const videos = getContext('videos');
+	const videos = $page.data.videos;
 
 	$: selectedCohost = $page.params.cohost;
 	$: filteredVideos = Object.fromEntries(

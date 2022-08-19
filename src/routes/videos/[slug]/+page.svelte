@@ -2,10 +2,9 @@
 	import Embed from '$lib/Embed.svelte';
 	import VideoList from '$lib/VideoList.svelte';
 	import { formatDate } from '$lib/utils';
-	import { getContext } from 'svelte';
 	import { page } from '$app/stores';
 
-	const videos = getContext('videos');
+	const videos = $page.data.videos;
 	$: video = videos[$page.params.slug];
 </script>
 

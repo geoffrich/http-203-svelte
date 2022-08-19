@@ -1,6 +1,5 @@
 <script>
 	import '../app.css';
-	import { setContext } from 'svelte';
 	import {
 		preparePageTransition,
 		TransitionType,
@@ -15,9 +14,6 @@
 	let { videos } = data; // TODO: how to make this reactive? $: ( { videos } = data); doesn't seem to work
 
 	let showBackIcon = $page.url.pathname.includes('/videos');
-
-	// TODO: still need this?
-	setContext('videos', videos);
 
 	// TODO: figure out weird bug with history stack updating twice
 	preparePageTransition();
