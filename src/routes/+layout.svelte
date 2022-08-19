@@ -1,17 +1,3 @@
-<script context="module">
-	/** @type { import('./__types/__layout').Load} */
-	export const load = async ({ fetch }) => {
-		// fetch in the layout and throw into a context since a bunch of disparate endpoints need this data
-		// layout endpoint/$data store will make this easier
-		const videos = await fetch('/videos.json').then((v) => v.json());
-		return {
-			props: {
-				videos
-			}
-		};
-	};
-</script>
-
 <script>
 	import '../app.css';
 	import { setContext } from 'svelte';
@@ -24,10 +10,13 @@
 	} from '$lib/page-transition';
 	import { page } from '$app/stores';
 
-	export let videos;
+	/** @type {import('./$types').LayoutData} */
+	export let data;
+	let { videos } = data; // TODO: how to make this reactive? $: ( { videos } = data); doesn't seem to work
 
 	let showBackIcon = $page.url.pathname.includes('/videos');
 
+	// TODO: still need this?
 	setContext('videos', videos);
 
 	// TODO: figure out weird bug with history stack updating twice

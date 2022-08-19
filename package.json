@@ -13,7 +13,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/kit": "1.0.0-next.405",
+		"@sveltejs/kit": "1.0.0-next.427",
 		"isomorphic-dompurify": "^0.20.0",
 		"marked": "^4.0.18",
 		"postcss": "^8.4.14",
