@@ -12,6 +12,11 @@
 	/** @type {HTMLElement[]} */
 	let elementsToCleanup = [];
 
+	/** @type {Record<string, HTMLElement>} */
+	let thumbElements = {};
+	/** @type {Record<string, HTMLElement>} */
+	let metaElements = {};
+
 	beforePageTransition(({ to, type }) => {
 		if (type === TransitionType.ThumbsToVideo) {
 			/** @type {HTMLElement?} */
@@ -26,11 +31,6 @@
 			}
 		}
 	});
-
-	/** @type {Record<string, HTMLElement>} */
-	let thumbElements = {};
-	/** @type {Record<string, HTMLElement>} */
-	let metaElements = {};
 
 	whileIncomingTransition(({ from, type }) => {
 		if (type === TransitionType.VideoToThumbs) {
