@@ -9,18 +9,15 @@
 	import { formatDate, ytSrcset } from './utils';
 	export let videos;
 
-	/** @type {HTMLElement} */
-	let list;
-
 	/** @type {HTMLElement[]} */
 	let elementsToCleanup = [];
 
 	beforePageTransition(({ to, type }) => {
 		if (type === TransitionType.ThumbsToVideo) {
 			/** @type {HTMLElement?} */
-			const thumb = list.querySelector(`a[href="${to.pathname}"] .video-thumb`);
+			const thumb = thumbElements[to.pathname];
 			/** @type {HTMLElement?} */
-			const details = list.querySelector(`a[href="${to.pathname}"] .video-meta`);
+			const details = metaElements[to.pathname];
 
 			if (thumb && details) {
 				elementsToCleanup.push(thumb, details);
@@ -29,23 +26,22 @@
 			}
 		}
 	});
+
+	/** @type {Record<string, HTMLElement>} */
+	let thumbElements = {};
+	/** @type {Record<string, HTMLElement>} */
+	let metaElements = {};
 
 	whileIncomingTransition(({ from, type }) => {
 		if (type === TransitionType.VideoToThumbs) {
-			// TODO: make this state driven?
 			// limited by the fact that it needs to work synchronously
 			// any component state needs to wait a tick to apply, and we don't have that time
 			// so we need to interact with the DOM elements directly
-			// at the least, bind directly to the element to avoid scoping issues
 
 			/** @type {HTMLElement?} */
-			const thumb =
-				list.querySelector(`a[href="${from.pathname}"] .video-thumb`) ||
-				list.querySelector('.video-thumb');
+			const thumb = thumbElements[from.pathname];
 			/** @type {HTMLElement?} */
-			const details =
-				list.querySelector(`a[href="${from.pathname}"] .video-meta`) ||
-				list.querySelector('.video-thumb');
+			const details = metaElements[from.pathname];
 
 			if (thumb && details) {
 				elementsToCleanup.push(thumb, details);
@@ -55,7 +51,7 @@
 		}
 	});
 
-	afterPageTransition(({ from, to }) => {
+	afterPageTransition(() => {
 		while (elementsToCleanup.length) {
 			const el = elementsToCleanup.pop();
 			if (el) {
@@ -65,12 +61,18 @@
 	});
 </script>
 
-<ol class="video-list" bind:this={list}>
+<ol class="video-list">
 	{#each Object.entries(videos) as [slug, video]}
+		{@const href = `/videos/${slug}`}
 		<li>
-			<a class="video-link" href={`/videos/${slug}`}>
-				<img class="video-thumb" srcset={ytSrcset(video.id)} alt={video.title} />
-				<p class="video-meta">
+			<a class="video-link" {href}>
+				<img
+					class="video-thumb"
+					srcset={ytSrcset(video.id)}
+					alt={video.title}
+					bind:this={thumbElements[href]}
+				/>
+				<p class="video-meta" bind:this={metaElements[href]}>
 					<time>{formatDate(new Date(video.published))}</time>
 				</p>
 			</a>

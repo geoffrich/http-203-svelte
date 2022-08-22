@@ -18,6 +18,11 @@
 <style lang="postcss">
 	lite-youtube {
 		max-width: unset;
+
+		&::before,
+		&::after {
+			content: unset;
+		}
 	}
 
 	.embed {
