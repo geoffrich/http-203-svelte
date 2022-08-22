@@ -11,7 +11,6 @@
 
 	let showBackIcon = $page.url.pathname.includes('/videos');
 
-	// TODO: figure out weird bug with history stack updating twice
 	preparePageTransition();
 
 	beforePageTransition(({ type }) => {

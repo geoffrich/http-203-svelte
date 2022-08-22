@@ -143,7 +143,7 @@ function getPageTransitionType(from, to) {
 	if ((from === '/' || from.startsWith('/with-')) && (to === '/' || to.startsWith('/with-'))) {
 		return TransitionType.ThumbsToThumbs;
 	}
-	if (from.startsWith('/videos/') && to.startsWith('/videos/')) {
+	if (from.startsWith('/videos/') && to.startsWith('/videos/') && from !== to) {
 		return TransitionType.VideoToVideo;
 	}
 	return TransitionType.Other;
