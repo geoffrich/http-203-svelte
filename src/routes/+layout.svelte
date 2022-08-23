@@ -9,6 +9,7 @@
 	} from '$lib/page-transition';
 	import { page } from '$app/stores';
 	import { afterNavigate } from '$app/navigation';
+	import AnimationTool from '$lib/AnimationTool.svelte';
 
 	let showBackIcon = $page.url.pathname.includes('/videos');
 	let backUrl = '/';
@@ -74,6 +75,8 @@
 		<slot />
 	</div>
 </div>
+
+<AnimationTool />
 
 <style lang="postcss">
 	.main-layout {

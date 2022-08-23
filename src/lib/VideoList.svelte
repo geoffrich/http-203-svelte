@@ -62,7 +62,7 @@
 </script>
 
 <ol class="video-list">
-	{#each Object.entries(videos) as [slug, video]}
+	{#each Object.entries(videos) as [slug, video] (video.id)}
 		{@const href = `/videos/${slug}`}
 		<li>
 			<a class="video-link" {href}>
