@@ -1,0 +1,1360 @@
+[
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "NWEDyCjbD9UBUFB4rRhIYwG7D5Q",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC41NkI0NEY2RDEwNTU3Q0M2",
+		"snippet": {
+			"publishedAt": "2021-11-23T12:41:54Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Svelte Summit Fall 2021",
+			"description": "Platinum Sponsor:\r\nGraphCMS - https://bit.ly/3Ft8ojy\r\n\r\nGold Sponsors:\r\nLevelUp Tutorials - https://leveluptutorials.com/\r\nCloudflare Pages - https://pages.cloudflare.com\r\nSvekyll - https://bit.ly/3qZc4FR\r\nNetlify - https://netlify.com/\r\nVercel - https://vercel.com\r\nMagic - https://magic.link\r\nFaunaDB - https://bit.ly/30FdKJy\r\nWPEngine - https://wpengine.com/atlas/\r\n\r\nMusic By:\r\nFractal - https://soundcloud.com/officialfractal\n\n0:00 Prelude\n20:00 Start\n29:00 Where Do I Begin?\n38:00 Documentation\n42:55 Svelte's Reactivity\n1:12:34 primo - building and managing static sites\n1:21:54 Guillermo Rauch - Vercel + Svelte\n1:32:30 Svelte transitions and accessibility\n1:43:06 Custom Svelte stores\n1:49:30 Headless WP and SvelteKit\n2:17:15 Islands architecture and Jamstack\n3:16:35 Scott Tolinski - From React to Svelte\n3:50:45 Svelte Sirens\n3:56:00 Rich Harris discusses creating libraries with SvelteKit\n4:07:18 State Machine meets Svelte component (svelte-fsm)\n4:21:50 Small steps lead to big leaps\n4:32:30 Coding with Jesse\n4:59:00 Plenti, a minimalist JAMstack framework and Theming\n5:07:00 Kevin, Robert, Rich\n5:08:55 Svelte and Vest Form Validation Framework\n5:30:04 Icon libraries",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/1Df-9EKvZr0/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/1Df-9EKvZr0/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/1Df-9EKvZr0/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/1Df-9EKvZr0/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/1Df-9EKvZr0/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 0,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "1Df-9EKvZr0"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "wFQhxbTdQrgrFBqhuktarTi3kDw",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC4yODlGNEE0NkRGMEEzMEQy",
+		"snippet": {
+			"publishedAt": "2021-11-24T08:04:17Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Geoff Rich - Svelte Transitions and Accessibility",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nSvelte includes built-in animations that makes it easy to slide, scale, and fly elements in and out of the DOM. However, you need to be careful to not trigger motion sickness in your users. I will go over which Svelte transitions could cause accessibility issues and how to respect user motion preferences when using them.\n\nWe'll iteratively build a solution to change which transition we use when the user requests reduced motion -- first only using CSS, then detecting the user's motion preference in a Svelte component, to finally encapsulating the logic in a reusable Svelte store.\n\nSpeaker: https://geoffrich.net",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/iceNAO8c4J4/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/iceNAO8c4J4/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/iceNAO8c4J4/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/iceNAO8c4J4/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/iceNAO8c4J4/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 1,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "iceNAO8c4J4"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "LqAlpHCUlOFact827R3HmS4zBqY",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC4wMTcyMDhGQUE4NTIzM0Y5",
+		"snippet": {
+			"publishedAt": "2021-11-24T08:20:16Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Kellen Mace - Bringing Svelte to 40% of the Web: Using Wordpress to Power Svelte",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nWordPress is the world's most popular content management system, powering over 40% of all sites on the web– a staggering statistic.\n\nIn this talk, we'll discuss how we can let content creators keep the excellent editorial workflows that WordPress provides, while leveraging Svelte on the frontend to provide a phenomenal user experience.\n\nSpeaker: https://twitter.com/kellenmace",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/l0q3alPtoow/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/l0q3alPtoow/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/l0q3alPtoow/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/l0q3alPtoow/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/l0q3alPtoow/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 2,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "l0q3alPtoow"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "qkpheXIIVv-UAFge2le1Euo1c3U",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC41MjE1MkI0OTQ2QzJGNzNG",
+		"snippet": {
+			"publishedAt": "2021-11-25T09:39:50Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Kevin Bridges - Responsive Svelte (exploring Svelte's reactivity)",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\r\n\nThis talk is focused on a better understanding of Svelte's reactivity. We will do this from an \"observer perspective\" - by visualizing it first-hand (right in your application)!\n\nThere's a bit of a mystery behind some of these concepts. We will delve into some lesser-known detail (that you may have not considered)! The hope is you will come away with more insight, and be better informed on how to use this awesome product!\n\nFULL SYLLABUS & RESOURCE LINKS: https://bit.ly/r-svelte\nARTICLE (contains more detail): https://bit.ly/ResponsiveSvelte\n\nVIDEO CONTENT:\n00:31 Introduction: Responsive Svelte (exploring Svelte's reactivity)\n02:39 Svelte Reactivity: The GreetUser Component\n04:48 Terminology SideBar: Snippets (code-snippets, html-snippets)\n05:42 Why Svelte is soo KOOL!\n08:04 Show Me: Exploring Reactivity\n08:46   1. Diagnostic Logging Probes\n10:57   2. Advanced Diagnostics\n13:30 Re-Render Analysis - Unexpected Results!\n14:12 Svelte's Dependency Monitoring\n16:46 Revisit Re-Render Analysis - Is Svelte Efficient?\n17:15 App-Based Reactivity Tweaks\n17:47   1. Finer Grained Dependency Management\n19:18   2. Preresolve Variations\n20:25 Svelte's Re-Render Optimization\n24:33 Are App-Based Reactivity Tweaks Necessary?\n25:28 Extra Credit Exercise\n27:54 What have we learned?\n28:30 Thanks Core Team & Big Bird?\n29:10 That's ALL Folks",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/fvY1TAKNPgY/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/fvY1TAKNPgY/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/fvY1TAKNPgY/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/fvY1TAKNPgY/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/fvY1TAKNPgY/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 3,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "fvY1TAKNPgY"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "2ize0QgmdopRiPjQEBS-aUTgiBQ",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC4wOTA3OTZBNzVEMTUzOTMy",
+		"snippet": {
+			"publishedAt": "2021-11-25T09:55:25Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Stephanie Dietz - Why Svelte is the best framework for beginner and advanced developers alike",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nWith no boilerplate code and little Svelte-specific syntax, Svelte feels just like vanilla JavaScript, making it a great framework for beginners to easily pick up. While it is beginner friendly, it does not sacrifice any best practices or features. In fact, Svelte can do everything other popular frameworks can do and more. Because of this, it is more than just a good starting point for beginners.\n\nSpeaker: https://twitter.com/steph_dietz_",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/ZLGRElWah08/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/ZLGRElWah08/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/ZLGRElWah08/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/ZLGRElWah08/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/ZLGRElWah08/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 4,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "ZLGRElWah08"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "SrsOnarWP2qvMgqKahgsgJHJu7M",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC4xMkVGQjNCMUM1N0RFNEUx",
+		"snippet": {
+			"publishedAt": "2021-11-26T12:03:18Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Mateo Morris - Introducing Primo: a Svelter, all-in-one way to build and manage static sites",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nIn this talk I'll show you how you can use Primo (an open-source desktop app) to quickly build interactive, easily editable websites using Svelte. In the process I'll demonstrate how Svelte's powerful features enable both Primo's component-driven development & lean, accessible, fast-loading static sites.\n\nSpeaker: https://twitter.com/_mateomorris",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/DOfzHyPxWyE/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/DOfzHyPxWyE/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/DOfzHyPxWyE/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/DOfzHyPxWyE/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/DOfzHyPxWyE/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 5,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "DOfzHyPxWyE"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "y15reLo6pxlFYVZa-7F9rBRZ6UA",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC41MzJCQjBCNDIyRkJDN0VD",
+		"snippet": {
+			"publishedAt": "2021-11-26T12:07:32Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Dean Fogarty - Transforming data to and from storage areas using Svelte custom stores",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nCustom stores can be used to wrap transforming data to and from storage mechanisms, either inside the browser or outside. Here we demonstrate a couple of fun transforms that have practical and real-world use.\n\nSpeaker: https://df.id.au",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/85Gc-i0ITf8/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/85Gc-i0ITf8/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/85Gc-i0ITf8/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/85Gc-i0ITf8/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/85Gc-i0ITf8/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 6,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "85Gc-i0ITf8"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "Xs1yWHZI539DlKkp4OjLJ3UGZ4E",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC5DQUNERDQ2NkIzRUQxNTY1",
+		"snippet": {
+			"publishedAt": "2021-11-27T11:33:08Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Evyatar Alush - Up your form validation game with Vest",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nForms were not always a part of the web, in fact, they were only added in HTML2, and even to this day writing them feels like they are an afterthought.\n\nVest is a powerful form validations framework inspired by the syntax and style of unit testing libraries like Mocha or Jest. It uses their declarative structure and makes it easy to write complex form validations that are also easy to read and maintain.\n\nSpeaker: https://twitter.com/evyataral",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/X2PuiawaGV4/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/X2PuiawaGV4/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/X2PuiawaGV4/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/X2PuiawaGV4/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/X2PuiawaGV4/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 7,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "X2PuiawaGV4"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "L_-f9IHygs0eyWLlnQyRMnCvOII",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC45NDk1REZENzhEMzU5MDQz",
+		"snippet": {
+			"publishedAt": "2021-11-27T11:37:09Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Dominik G - Sveltable Vector Graphics",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nA fresh take on icon libraries.\n\nSpeaker: Dominik G",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/6fW613fblwk/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/6fW613fblwk/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/6fW613fblwk/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/6fW613fblwk/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/6fW613fblwk/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 8,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "6fW613fblwk"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "n90CohqGbBAnFnk4sFUzcBdrsIQ",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC5GNjNDRDREMDQxOThCMDQ2",
+		"snippet": {
+			"publishedAt": "2021-11-28T11:56:28Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Jesse Skinner - Adding Svelte to your legacy projects",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nExcited to use Svelte, but stuck maintaining a huge React or PHP application? You don't have to rewrite your whole application to get started using Svelte! In this session you'll learn some techniques for adding Svelte to any web project. You'll also see how to reuse your existing JavaScript widgets inside your Svelte components, whether they are React components, or even ancient jQuery plugins!\n\nSpeaker: https://twitter.com/JesseSkinner",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/uWxkaDdqfpI/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/uWxkaDdqfpI/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/uWxkaDdqfpI/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/uWxkaDdqfpI/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/uWxkaDdqfpI/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 9,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "uWxkaDdqfpI"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "Cu1QokgPbpnZJPFW5ahHUP1PESk",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC40NzZCMERDMjVEN0RFRThB",
+		"snippet": {
+			"publishedAt": "2021-11-28T12:02:10Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Ken Kunz - A State Machine walks into a Svelte Component",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nFinite state machines provide an elegant, powerful approach for modeling complex behavior, and are ideally suited to many UI components. Alas, existing JavaScript FSM implementations feel verbose and bloated alongside Svelte's elegant, minimalist syntax. No more! svelte-fsm is the Svelte-esque FSM library. Discover the joy and benefits of using svelte-fsm to manage your components' state.\n\nSpeaker: https://twitter.com/kennethkunz",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/3_D-3HPUdEI/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/3_D-3HPUdEI/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/3_D-3HPUdEI/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/3_D-3HPUdEI/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/3_D-3HPUdEI/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 10,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "3_D-3HPUdEI"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "35jIqUS9G2qLR1gIq-ERHV5O4DA",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC5EMEEwRUY5M0RDRTU3NDJC",
+		"snippet": {
+			"publishedAt": "2021-11-28T12:23:11Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Jim Fisk & Stephanie Luz - Dreaming of Theming with Svelte using Plenti",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nPlenti is a free and open source static site generator for Svelte. Its simple design makes it great for beginners who are trying to break into tech, but it's also powerful and extremely fast for devs who need to be hyper-focused on being productive. Plenti takes care of common things you need for building websites, including connecting your Svelte components to a data source, client routing, hydrating to a single page app (SPA), and creating HTML fallbacks for each page to improve performance and SEO.\n\nSpeaker: https://twitter.com/jimafisk",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/cDcono3nj3k/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/cDcono3nj3k/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/cDcono3nj3k/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/cDcono3nj3k/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/cDcono3nj3k/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 11,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "cDcono3nj3k"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "YsW0k_QxPaP0e4-xrT2oyVeWGlo",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC45ODRDNTg0QjA4NkFBNkQy",
+		"snippet": {
+			"publishedAt": "2021-11-28T12:25:07Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Scott Tolinski - From React to Svelte",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nWe rewrote our entire platform on Svelte. In this talk, I'll cover the practical techniques, lessons learned and tips and tricks for anyone considering a move.\n\nSpeaker: https://twitter.com/stolinski",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/ezk6qAIXe68/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/ezk6qAIXe68/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/ezk6qAIXe68/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/ezk6qAIXe68/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/ezk6qAIXe68/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 12,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "ezk6qAIXe68"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "nGOEoQQo5frMi0Web5omVUjPsPw",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC4zMDg5MkQ5MEVDMEM1NTg2",
+		"snippet": {
+			"publishedAt": "2021-11-28T12:29:16Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Austin Crim - Skipping Scales to Make Music: Svelte as an Instructional Tool",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nAfter failing to learn React, Svelte swooped in to rescue my frontend learning journey by allowing me to build things fast. Its syntax was simple and its mental model intuitive.\nThough there is much gnashing of teeth over web development neophytes skipping the fundamentals and going straight to frameworks, I will make the case for why starting Svelte helped changed the arc of my career.\n\nSpeaker: https://twitter.com/crim_codes",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/-co2YmwQFl4/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/-co2YmwQFl4/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/-co2YmwQFl4/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/-co2YmwQFl4/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/-co2YmwQFl4/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 13,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "-co2YmwQFl4"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "GhQ0BdK7g6y471TKm13mx_CJuOU",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC41Mzk2QTAxMTkzNDk4MDhF",
+		"snippet": {
+			"publishedAt": "2021-11-28T12:31:40Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Rich Harris - Svelte Cubed",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nThe other side of SvelteKit\n\nSpeaker: https://twitter.com/Rich_Harris",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/qD6Pmp45sO4/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/qD6Pmp45sO4/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/qD6Pmp45sO4/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/qD6Pmp45sO4/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/qD6Pmp45sO4/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 14,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "qD6Pmp45sO4"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "gzmRoiOboPGS9d0_CwN1cZ0dSAk",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC5EQUE1NTFDRjcwMDg0NEMz",
+		"snippet": {
+			"publishedAt": "2021-12-02T10:06:26Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Svelte Summit Mini Edition: Stockholm",
+			"description": "Platinum Sponsor:\r\nGraphCMS - https://bit.ly/3Ft8ojy\r\n\r\nGold Sponsors:\r\nLevelUp Tutorials - https://leveluptutorials.com/\r\nCloudflare Pages - https://pages.cloudflare.com\r\nSvekyll - https://bit.ly/3qZc4FR\r\nNetlify - https://netlify.com/\r\nVercel - https://vercel.com\r\nMagic - https://magic.link\r\nFaunaDB - https://bit.ly/30FdKJy\r\nWPEngine - https://wpengine.com/atlas/\r\n\r\nMusic By:\r\nFractal - https://soundcloud.com/officialfractal\r\n\r\nVenue (food, drinks, tech):\r\nValtech AB - https://www.valtech.com/sv-se/\r\n\r\nYou didn't think Svelte Summit was over already, right? We start at 7PM CET.\r\n\r\nTalks:\r\n- Intro to SvelteKit (Ekene Eze, Netlify)\r\n- Test Driven Development with Svelte (Basar BK)\r\n- SEO for Developers (Nick Reese, Luke Edwards)\r\n- 5 years of Svelte at Itslearning (Stéphane Vanraes, Bouvet)\r\n\r\nTune in for some amazing talks, live from Svelte Society Stockholm\n\nTimestamps:\n0:00 Prelude\n19:10 Intro\n22:18 Intro to SvelteKit\n49:45 TDD with Svelte\n1:09:24 SEO for Developers\n1:30:42 5 years of Svelte at Itslearning\n1:41:20 Q&A",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/khYZmMiSHm8/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/khYZmMiSHm8/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/khYZmMiSHm8/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/khYZmMiSHm8/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/khYZmMiSHm8/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 15,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "khYZmMiSHm8"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "M6RrRYPn1_zh3uPIK7PJVPSnNC8",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC41QTY1Q0UxMTVCODczNThE",
+		"snippet": {
+			"publishedAt": "2021-12-02T10:06:37Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Svelte Summit Mini Edition: London",
+			"description": "Platinum Sponsor:\r\nGraphCMS - https://bit.ly/3Ft8ojy\r\n\r\nGold Sponsors:\r\nLevelUp Tutorials - https://leveluptutorials.com/\r\nCloudflare Pages - https://pages.cloudflare.com\r\nSvekyll - https://bit.ly/3qZc4FR\r\nNetlify - https://netlify.com/\r\nVercel - https://vercel.com\r\nMagic - https://magic.link\r\nFaunaDB - https://bit.ly/30FdKJy\r\nWPEngine - https://wpengine.com/atlas/\r\n\r\nMusic By:\r\nFractal - https://soundcloud.com/officialfractal\r\n\r\nVenue:\r\nFugitive Motel - https://fugitivemotel.bar\r\n\r\nYou didn't think Svelte Summit was over already, right? We start at 7PM UTC\r\n\r\nTalks:\r\n- Routify 3 (Jakob Rosenberg and GHOST/Willow)\r\n- SvelteKit and the Content Layer (Scott Spence)\r\n(A brief look at the history of content on the web and beyond and how SvelteKit can leverage the technology where we are now)\r\n- Sveltable Vector Graphics Part 2 (Dominikg)\r\n- Our Journey in bringing Svelte to enterprise\r\n\r\nTune in for some amazing talks, live from Svelte Society London",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/NCHQuqXVZtc/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/NCHQuqXVZtc/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/NCHQuqXVZtc/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/NCHQuqXVZtc/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 16,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "NCHQuqXVZtc"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "P72yYaV75RVJK0k8UoSqeiGVfWo",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC4yMUQyQTQzMjRDNzMyQTMy",
+		"snippet": {
+			"publishedAt": "2021-12-02T11:44:21Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Ekene Eze - Unlocking Dev Super Powers with SvelteKit",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nSvelteKit gives developers the ability to do more with less. Less code, less energy, and consequently less time. More so, it gives you all the SEO benefits of single-page applications with client-side routing for almost instant navigation. Talk about the best of both worlds. With the techniques we'll discuss in this talk, you'll learn how to get the best of SvelteKit and unlock the superpowers you never knew you had\n\nSpeaker: https://twitter.com/kenny_io",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/aSBcSLViQdo/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/aSBcSLViQdo/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/aSBcSLViQdo/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/aSBcSLViQdo/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/aSBcSLViQdo/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 17,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "aSBcSLViQdo"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "zWPONGRyOdPsVxO3uYMhjqPrQ18",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC45RTgxNDRBMzUwRjQ0MDhC",
+		"snippet": {
+			"publishedAt": "2021-12-02T11:49:46Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Stephane Vanraes - 5 Years of Svelte at Itslearning",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nWhen Svelte came on the scene in 2016 it was fully embraced by Itslearning for all frontend. With every new Svelte version parts got rewritten, so let's compare the same page, doing the same thing over the three Svelte versions.\n\nSpeaker: https://twitter.com/stephanevanraes",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/o2p74zqhZRs/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/o2p74zqhZRs/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/o2p74zqhZRs/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/o2p74zqhZRs/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/o2p74zqhZRs/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 18,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "o2p74zqhZRs"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "mYlnLqq63MTcg1pbikhIEzMBCzE",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC5ENDU4Q0M4RDExNzM1Mjcy",
+		"snippet": {
+			"publishedAt": "2021-12-02T12:03:04Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Nick Reese & Luke Edwards - SEO for Developers",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nAbout the talk:\nSEO health is a crucial, yet often-overlooked aspect of our web applications' success. It can be the difference between pet-project and an extra source of income! This presentation will cover the core SEO basics every developer should know and introduce some tooling to help ensure your projects are setup for success.\n\nSpeakers: https://twitter.com/nickreese https://twitter.com/lukeed05",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/_CYapNg9NG0/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/_CYapNg9NG0/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/_CYapNg9NG0/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/_CYapNg9NG0/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/_CYapNg9NG0/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 19,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "_CYapNg9NG0"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "akVgFPnVMi-sIaIPLd8uAU2e3Us",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC4yMDhBMkNBNjRDMjQxQTg1",
+		"snippet": {
+			"publishedAt": "2021-12-05T14:11:59Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Rich Harris - State of the Sveltunion (5 Years of Svelte)",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nRich Harris opens Svelte Summit with a short discussion and highlights some key moments and happenings throughout the years. Enjoy!\n\nSlides: https://docs.google.com/presentation/d/1Hx9ysbRoVw6r8sEORlPtRmEEmvPZYQZjHwl1kOXpXjU/edit?usp=sharing",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/YeY5M29-WcY/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/YeY5M29-WcY/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/YeY5M29-WcY/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/YeY5M29-WcY/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/YeY5M29-WcY/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 20,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "YeY5M29-WcY"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "1f3rbrHpi1ptFZh2d6UFFcgO3TI",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC5GM0Q3M0MzMzY5NTJFNTdE",
+		"snippet": {
+			"publishedAt": "2021-12-15T10:19:38Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Dominik G - Sveltable Vector Graphics",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nTalk notes:\nunocss: https://github.com/antfu/unocss#vite--svelte",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/svyUjUpyrWk/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/svyUjUpyrWk/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/svyUjUpyrWk/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/svyUjUpyrWk/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/svyUjUpyrWk/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 21,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "svyUjUpyrWk"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "JNCvwlkLE0fZ-8EkP7kkYwwZqqA",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC5DNzE1RjZEMUZCMjA0RDBB",
+		"snippet": {
+			"publishedAt": "2022-01-17T12:56:47Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Jakob Rosenberg & Ghost - Routify 3",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nSpeakers: https://twitter.com/jakob_rosenberg & https://twitter.com/onlyspaceghost",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/bSqtcoQixJs/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/bSqtcoQixJs/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/bSqtcoQixJs/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/bSqtcoQixJs/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/bSqtcoQixJs/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 22,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "bSqtcoQixJs"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "SbpY6cxfBKz8gxiWE5bzW6fZyjs",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC43MTI1NDIwOTMwQjIxMzNG",
+		"snippet": {
+			"publishedAt": "2022-01-17T13:03:22Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Sid Nagavarapu - Our Journey in bringing Svelte to enterprise",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nSpeaker: https://twitter.com/na_sidharth",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/eVEX8Js6CMk/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/eVEX8Js6CMk/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/eVEX8Js6CMk/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/eVEX8Js6CMk/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/eVEX8Js6CMk/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 23,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "eVEX8Js6CMk"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "z9ibo8ncF3WwKf-Xfgp4i_lgBd8",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC5DQ0MyQ0Y4Mzg0M0VGOEYw",
+		"snippet": {
+			"publishedAt": "2022-01-17T14:24:32Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Maurice de Beijer - Build Reliable Svelte Applications using Cypress",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nSpeakers: https://twitter.com/jakob_rosenberg & https://twitter.com/onlyspaceghost",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/v--NEzfAtsI/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/v--NEzfAtsI/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/v--NEzfAtsI/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/v--NEzfAtsI/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/v--NEzfAtsI/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 24,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "v--NEzfAtsI"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "13ShBkmsrkQYLduiNj8_OkugA4U",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC4yQUE2Q0JEMTk4NTM3RTZC",
+		"snippet": {
+			"publishedAt": "2022-01-17T14:26:26Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Maricris Bonzo - NFT Marketplace with Svelte and Magic",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nSpeaker: https://twitter.com/seemcat",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/NigFFcK3WnI/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/NigFFcK3WnI/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/NigFFcK3WnI/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/NigFFcK3WnI/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/NigFFcK3WnI/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 25,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "NigFFcK3WnI"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "z-32UUzXiEjcDlCK7PcmNOSXkO0",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC5DMkU4NTY1QUFGQTYwMDE3",
+		"snippet": {
+			"publishedAt": "2022-01-17T14:39:45Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Kyohei Hamaguchi - Building a custom library for videochat with Svelte's Web Components Support",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nSpeakers: https://twitter.com/tnzk",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/xLcWrdNgcWI/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/xLcWrdNgcWI/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/xLcWrdNgcWI/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/xLcWrdNgcWI/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/xLcWrdNgcWI/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 26,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "xLcWrdNgcWI"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "G80GSfZUaBmiXZsWA_S3CeFYlFA",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC44Mjc5REFBRUE2MTdFRDU0",
+		"snippet": {
+			"publishedAt": "2022-01-24T10:42:26Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Bjorn Lu - Bending Svelte using Preprocessors",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nDescription\nExplore the world of Svelte preprocessors and how to manipulate almost anything! Learn how to work with the Svelte abstract syntax tree (AST) and transform Svelte code safely with sourcemaps intact. And build a project along the way.\n\nSpeaker\nhttps://twitter.com/bluwyoo",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/glp4iEBTkvQ/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/glp4iEBTkvQ/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/glp4iEBTkvQ/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/glp4iEBTkvQ/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/glp4iEBTkvQ/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 27,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "glp4iEBTkvQ"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "k9Qt-hq6kcRhaMWkljjacn7PMOA",
+		"id": "UEw4Yk1nWDFreVpUZzJiSTlJT01nZkJjOGxyVTN2Mml0dC43NDhFRTgwOTRERTU4Rjg3",
+		"snippet": {
+			"publishedAt": "2022-01-24T11:42:42Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Ivan Hofer - Internationalization in SvelteKit and How to Prevent Mistakes",
+			"description": "Platinum Sponsor:\nGraphCMS - https://bit.ly/3Ft8ojy\n\nGold Sponsors:\nLevelUp Tutorials - https://leveluptutorials.com/\nCloudflare Pages - https://pages.cloudflare.com\nSvekyll - https://bit.ly/3qZc4FR\nNetlify - https://netlify.com/\nVercel - https://vercel.com\nMagic - https://magic.link\nFaunaDB - https://bit.ly/30FdKJy\nWPEngine - https://wpengine.com/atlas/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nDescription\n\nA demo on how to setup internationalization in a SvelteKit project using the lightweight library typesafe-i18n.\n\nRepos:\n- https://github.com/ivanhofer/typesafe-i18n\n- https://github.com/ivanhofer/typesafe-i18n-demo-sveltekit\n\nSpeaker\nhttps://twitter.com/ivanhofer_",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/C6O5pMMMTG0/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/C6O5pMMMTG0/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/C6O5pMMMTG0/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/C6O5pMMMTG0/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/C6O5pMMMTG0/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTg2bI9IOMgfBc8lrU3v2itt",
+			"position": 28,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "C6O5pMMMTG0"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	}
+]

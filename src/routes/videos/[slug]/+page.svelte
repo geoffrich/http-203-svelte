@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>{video.title} - HTTP 203</title>
+	<title>{video.title} - Svelte Summit</title>
 </svelte:head>
 
 <div class="video-layout">

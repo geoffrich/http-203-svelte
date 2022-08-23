@@ -1,14 +1,13 @@
-import data from './data.json';
+import _2020 from './data/2020.json';
+import _2021 from './data/fall-2021.json';
+import _2022 from './data/spring-2022.json';
+
 import { marked } from 'marked';
 import DOMPurify from 'isomorphic-dompurify';
 
-// TODO: use Svelte Society data
-function processData() {
-	const entries = data.map((dataItem) => {
-		const title = dataItem.snippet.title
-			.replace(/ [-|] HTTP ?203( Advent)?$/, '')
-			.replace(/^HTTP 203: /, '')
-			.replace(/ \(S\d, Ep\d\)$/, '');
+function processPlaylist(data, category) {
+	return data.map((dataItem) => {
+		const title = dataItem.snippet.title;
 
 		return [
 			title
@@ -24,29 +23,19 @@ function processData() {
 						breaks: true
 					})
 				),
-				published: dataItem.snippet.publishedAt
+				published: dataItem.snippet.publishedAt,
+				category
 			}
 		];
 	});
+}
 
-	const firstAdaVid = 'F-rZOIBGIaQ';
-	const firstSurmaVid = 'PYSOnC2CrD8';
-	const firstPaulVid = 'k2DRz0KIZAU';
-	const firstAdaIndex = entries.findIndex((entry) => entry[1].id === firstAdaVid);
-	const firstSurmaIndex = entries.findIndex((entry) => entry[1].id === firstSurmaVid);
-	const firstPaulIndex = entries.findIndex((entry) => entry[1].id === firstPaulVid);
-
-	for (const [index, entry] of entries.entries()) {
-		if (index < firstAdaIndex) {
-			entry[1].cohost = 'Cassie';
-		} else if (index < firstSurmaIndex) {
-			entry[1].cohost = 'Ada';
-		} else if (index < firstPaulIndex) {
-			entry[1].cohost = 'Surma';
-		} else {
-			entry[1].cohost = 'Paul';
-		}
-	}
+function processData() {
+	const entries = [
+		...processPlaylist(_2022, '2022'),
+		...processPlaylist(_2021, '2021'),
+		...processPlaylist(_2020, '2020')
+	];
 
 	const processedData = Object.fromEntries(entries);
 	return processedData;

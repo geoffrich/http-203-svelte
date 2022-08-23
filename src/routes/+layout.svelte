@@ -8,8 +8,21 @@
 		whileIncomingTransition
 	} from '$lib/page-transition';
 	import { page } from '$app/stores';
+	import { afterNavigate } from '$app/navigation';
 
 	let showBackIcon = $page.url.pathname.includes('/videos');
+	let backUrl = '/';
+
+	afterNavigate(({ from, to }) => {
+		if (
+			(from?.pathname.startsWith('/summit-') || from?.pathname === '/') &&
+			to.pathname.includes('/videos')
+		) {
+			backUrl = from.pathname;
+		} else {
+			backUrl = '/';
+		}
+	});
 
 	preparePageTransition();
 
@@ -50,11 +63,11 @@
 
 <div class="main-layout">
 	<header class="header" class:show-back-icon={showBackIcon}>
-		<a href="/" class="home-link">
+		<a href={backUrl} class="home-link">
 			<svg class="back-icon" viewBox="0 0 24 24">
 				<path d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20v-2z" />
 			</svg>
-			<span class="header-text">HTTP 203</span>
+			<span class="header-text">Svelte Summit</span>
 		</a>
 	</header>
 	<div class="main">

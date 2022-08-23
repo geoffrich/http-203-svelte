@@ -1,0 +1,942 @@
+[
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "G1I-CcIemqFmumXLs_E6039vjWU",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS41NkI0NEY2RDEwNTU3Q0M2",
+		"snippet": {
+			"publishedAt": "2020-10-18T10:23:00Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Svelte Summit 2020",
+			"description": "It's finally time. Let's all hunker down and watch 17 great Svelte talks.\n\nJoin us on the Discord for discussing talks: https://discord.gg/FRHEHyA\n\nThanks to our sponsors: b3 CodeRight, AWS Amplify, Human Content, Oasis Digital and hyper63.\n\nMore information: https://sveltesummit.com/\n\nTalk timestamps (HH:MM:SS):\n00:11:23 - The Zen of Svelte (Morgan Williams)\n00:17:20 - Prototyping Design with Svelte (Daniel Sandoval)\n00:50:16 - How does Svelte's crossfade function work? (Nicolo Davis)\n00:58:12 - Plenti (Jim Fisk)\n01:17:04 - How you setup data visualization with Svelte (Matthias Stahl)\n01:57:20 - Svelte at the Edge: Powering Svelte Apps with Cloudflare Workers (Luke Edwards)\n02:34:59 - The Web á la Mode (Ron Au)\n02:50:44 - Introduction to Svite (Dominik G.)\n02:59:40 - Svelte Animations (Mark Volkmann)\n03:30:00 - How to build a cat-themed streaming service with Svelte (Annie Taylor Chen)\n03:38:55 - REPLicant (Peter Allen 🐧)\n04:19:55 - Unlocking The Power of Svelte Actions (Kirill Vasiltsov)\n04:35:45 - So you want to pick a router? (Alessandro Segala)\n05:00:00 - Building SEO Friendly Sites with Svelte and Elder.js (Nick Reese)\n05:36:10 - Modern Fetch in Svelte using Stores (Tim Raderschad)\n05:54:58 - Demystifying Svelte Transitions (Tan Li Hau)\n06:41:00 - Futuristic Web Development (Rich Harris)\n\nThanks to the thousands of Svelte devs that joined us today! \n\nFund Svelte development: https://opencollective.com/svelte",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/vHHLLJA0b70/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/vHHLLJA0b70/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/vHHLLJA0b70/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/vHHLLJA0b70/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/vHHLLJA0b70/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 0,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "vHHLLJA0b70"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "QOxMLEeikMjD6LQJZaebxJGiqYo",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS4yODlGNEE0NkRGMEEzMEQy",
+		"snippet": {
+			"publishedAt": "2020-10-19T10:45:40Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Rich Harris: Futuristic Web Development",
+			"description": "Edit from the future: check out our followup podcast interview on SvelteKit https://share.transistor.fm/s/859bbd95\n\n---\nThis was recorded for Svelte Summit 2020: https://www.sveltesummit.com\n\nThe front end development landscape has been transformed since we started building Svelte and Sapper. What would a reimagined, truly modern workflow look like?\n\nOpen Collective: https://opencollective.com/svelte",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/qSfdtmcZ4d0/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/qSfdtmcZ4d0/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/qSfdtmcZ4d0/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/qSfdtmcZ4d0/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/qSfdtmcZ4d0/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 1,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "qSfdtmcZ4d0"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "Q-KVaEM6bZB9je06dtsz0r6FH3c",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS4wMTcyMDhGQUE4NTIzM0Y5",
+		"snippet": {
+			"publishedAt": "2020-10-19T12:03:29Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Ron Au: Web à la Mode",
+			"description": "This was recorded for Svelte Summit 2020: https://www.sveltesummit.com\n\nThe web is a mouthwatering platform, fashionably served with a side of sweet reactivity. Take a wild ride exploring what it has to offer you and how Svelte ties it all together.",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/7J3Ij3vuIOY/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/7J3Ij3vuIOY/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/7J3Ij3vuIOY/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/7J3Ij3vuIOY/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/7J3Ij3vuIOY/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 2,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "7J3Ij3vuIOY"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "WdtFt9NpKt6wxUppKWZ1qLwMXa4",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS41MjE1MkI0OTQ2QzJGNzNG",
+		"snippet": {
+			"publishedAt": "2020-10-19T19:37:33Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Morgan Williams: The Zen of Svelte",
+			"description": "This was recorded for Svelte Summit 2020: https://www.sveltesummit.com\n\nApproaching frontend as a backend developer, Svelte feels surprisingly pythonic. Let's take a quick look at what's familiar, what's foreign, and how to explore the gap.\n\nFurther links and resources are available in this gist! https://gist.github.com/vedam/cb1fca38d021143a87f59813f36995dc",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/51K1Yo2e5TA/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/51K1Yo2e5TA/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/51K1Yo2e5TA/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/51K1Yo2e5TA/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/51K1Yo2e5TA/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 3,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "51K1Yo2e5TA"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "9eMEgzS-XwK4me99ytByHHGj3bY",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS5DQUNERDQ2NkIzRUQxNTY1",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Kirill Vasiltsov: Unlocking The Power of Svelte Actions",
+			"description": "This was recorded for Svelte Summit 2020: https://www.sveltesummit.com\n\nLearn how to make development easier with Svelte actions.\nCreate custom events, extend DOM attributes, share animation logic and\nmore.\n\nFurther links and resources are available in this gist! https://gist.github.com/vedam/cb1fca38d021143a87f59813f36995dc",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/9S8GUTcMsgA/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/9S8GUTcMsgA/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/9S8GUTcMsgA/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/9S8GUTcMsgA/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/9S8GUTcMsgA/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 4,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "9S8GUTcMsgA"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "CtbCV_l8nrxDRB9hu6fuTjtZWSo",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS45NDk1REZENzhEMzU5MDQz",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Nick Reese: Building SEO Friendly Sites with Svelte and Elder.js",
+			"description": "This was recorded for Svelte Summit 2020: https://www.sveltesummit.com\n\nSvelte makes interactivity a breeze but building SEO focused websites with Svelte isn't as easy as it seems.\n\nIn this talk we'll explore how you can use Svelte and Elder.js to build flagship SEO sites. We'll cover routing, partial hydration, hooks, and shortcodes so you can hit the ground running.\n\nFurther links and resources are available in this gist! https://gist.github.com/vedam/cb1fca38d021143a87f59813f36995dc",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/lAWoV0wg7-4/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/lAWoV0wg7-4/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/lAWoV0wg7-4/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/lAWoV0wg7-4/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/lAWoV0wg7-4/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 5,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "lAWoV0wg7-4"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "z2afEQkjpp9_2VTiGZJblmWoDh0",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS5GNjNDRDREMDQxOThCMDQ2",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Annie Taylor Chen: How to build a cat-themed streaming service with Svelte",
+			"description": "This was recorded for https://www.sveltesummit.com\n\nHave you heard of Meowflix, a Netflix but dedicated only to cat-themed movies, built by a group of diligent cats? Tune in for a brief walkthrough on how it was made.\n\nFurther links and resources are available in this gist! https://gist.github.com/vedam/cb1fca38d021143a87f59813f36995dc",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/axpeyzQOVxM/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/axpeyzQOVxM/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/axpeyzQOVxM/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/axpeyzQOVxM/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/axpeyzQOVxM/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 6,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "axpeyzQOVxM"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "c23yd1d47nuLgVE2ZDJ7qL4uRrU",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS40NzZCMERDMjVEN0RFRThB",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Morgan Williams: The Zen of Svelte",
+			"description": "This was recorded for Svelte Summit 2020: https://www.sveltesummit.com\n\nApproaching frontend as a backend developer, Svelte feels surprisingly pythonic. Let's take a quick look at what's familiar, what's foreign, and how to explore the gap.\n\nFurther links and resources are available in this gist! https://gist.github.com/vedam/cb1fca38d021143a87f59813f36995dc",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/51K1Yo2e5TA/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/51K1Yo2e5TA/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/51K1Yo2e5TA/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/51K1Yo2e5TA/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/51K1Yo2e5TA/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 7,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "51K1Yo2e5TA"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "ow_qm9MGbKCtiWSqob5siqlDYxA",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS5EMEEwRUY5M0RDRTU3NDJC",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "R. Mark Volkmann: Svelte Animations - Builtin and Custom",
+			"description": "This was recorded for Svelte Summit 2020: https://www.sveltesummit.com\n\nThis talk equips Svelte developers to add animations to their apps. First, builtin animations using the svelte/animate, svelte/motion, and svelte/transition packages will be described and demonstrated. Then we will venture into creating custom animations and show how they are based on CSS rather than JavaScript for best performance. The content is derived from my book 'Svelte and Sapper in Action'.\n\nFurther links and resources are available in this gist! https://gist.github.com/vedam/cb1fca38d021143a87f59813f36995dc",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/wMpKD0IDiHc/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/wMpKD0IDiHc/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/wMpKD0IDiHc/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/wMpKD0IDiHc/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/wMpKD0IDiHc/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 8,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "wMpKD0IDiHc"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "BpOY0ckOvDQ0F49mNQU7p6PwRCU",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS45ODRDNTg0QjA4NkFBNkQy",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Tan Li Hau: Demystifying Svelte Transitions",
+			"description": "This was recorded for Svelte Summit 2020: https://www.sveltesummit.com\n\nIt's unbelievably easy to create a cool slick transition in Svelte. Do you ever wonder how Svelte make it so simple? or how does Svelte make it performant and smooth?\n\nIn this talk, we are going to take a deep dive to look at the transition mechanism, how Svelte coordinates transitions across components, and what make them performant.\n\nFurther links and resources are available in this gist! https://gist.github.com/vedam/cb1fca38d021143a87f59813f36995dc",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/FxMyqxc8Fx0/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/FxMyqxc8Fx0/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/FxMyqxc8Fx0/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/FxMyqxc8Fx0/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/FxMyqxc8Fx0/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 9,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "FxMyqxc8Fx0"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "dA1ep59lKTKs54sOVRBxdIbu7D8",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS4zMDg5MkQ5MEVDMEM1NTg2",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Daniel E. Sandoval: Prototyping Testing with Real Data Models using Svelte",
+			"description": "This was recorded for Svelte Summit 2020: https://www.sveltesummit.com\n\nRapid prototyping and feedback is the best way to ensure that our products are solving real problems and meeting user needs. Tools like Figma and InVision let us mock up something quickly and get static prototypes in front of users without having to dive into the intricacies of building real software. These tools fall short, however, when our prototype relies on real data in order to test our assumptions in a user interview or usability test.\n\nFurther links and resources are available in this gist! https://gist.github.com/vedam/cb1fca38d021143a87f59813f36995dc",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/S0uUJqTJA44/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/S0uUJqTJA44/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/S0uUJqTJA44/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/S0uUJqTJA44/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/S0uUJqTJA44/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 10,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "S0uUJqTJA44"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "1rvrUJOsvsY4V-fy7Z4MgW6L1Cw",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS41Mzk2QTAxMTkzNDk4MDhF",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Alessandro Segala: So you want to pick a router?",
+			"description": "This was recorded for Svelte Summit 2020: https://www.sveltesummit.com\n\nIf you are building a Single-Page App (SPA), you will likely need a router for your app. With the lack of an official router for Svelte 3, there's quite a few options, so which one should you pick?\n\nIn this talk, we'll look at the two different kinds of routers (based on the History API or based on the page's hash), how they differ, and when you should pick which. We'll also go through a demo of implementing routing for a Svelte 3 SPA using svelte-spa-router.",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/EL1qM0cv0eA/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/EL1qM0cv0eA/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/EL1qM0cv0eA/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/EL1qM0cv0eA/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/EL1qM0cv0eA/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 11,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "EL1qM0cv0eA"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "A7v2xqG8MgjeTofIAHtZWoVIG7w",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS5EQUE1NTFDRjcwMDg0NEMz",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Evilpingwin: REPLicant (Svelte Summit 2020)",
+			"description": "See Repo: https://github.com/pngwn/REPLicant\n\nA REPL, or online playground, is a great way to allow users to test-drive tools you have built without needing to install a thing, but they are also great for interactive tutorials, sharing snippets and reporting bugs!\n\nThe Svelte REPL has been a feature of the svelte ecosystem since time immemorial and while REPLs can be complex, the principles are simple when you know them.\n\nWe will take a dive into how the Svelte REPL works and build the simplest possible version. LIVE!\n\nOpen Collective: https://opencollective.com/svelte\n\nThis was recorded for Svelte Summit 2020: https://www.sveltesummit.com",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/S3j1fLzC8_E/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/S3j1fLzC8_E/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/S3j1fLzC8_E/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/S3j1fLzC8_E/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/S3j1fLzC8_E/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 12,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "S3j1fLzC8_E"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "VW3EazAxnV1JwFWqPKRVkzJrFtw",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS41QTY1Q0UxMTVCODczNThE",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Jim Fisk: Plenti",
+			"description": "This was recorded for https://www.sveltesummit.com\n\nPlenti is an open source static site generator (SSG) that uses Svelte to give developers a dead simple way to make dynamic and speedy websites. It takes a new approach by cutting out bundlers, hitting the compiler directly in V8, and building scaffolding in Go to give an extremely fast and consistent developer experience. We'll go over how the data source, content structure, layout, routing, and hydration are all connected to work out-of-the-box. You don't need any tools or configuration to get started — NodeJS and NPM are optional.\n\nFurther links and resources are available in this gist! https://gist.github.com/vedam/cb1fca38d021143a87f59813f36995dc",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/mPA_60o0Bek/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/mPA_60o0Bek/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/mPA_60o0Bek/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/mPA_60o0Bek/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/mPA_60o0Bek/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 13,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "mPA_60o0Bek"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "sB-XIp3LINfHEhaWS1_AGrJFOU0",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS4yMUQyQTQzMjRDNzMyQTMy",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Tim Raderschad: Modern fetch in svelte using stores",
+			"description": "This was recorded for Svelte Summit 2020: https://www.sveltesummit.com\n\nIn this short talk we will take a look at using Svelte and their awesome stores to create a modified version of fetch which will make our UIs feel responsive and clean. At the end we will also sprinkle in a bit of caching to further improve the performance. We will also talk about Loading Spinners and how we can avoid bored users!\n\nFurther links and resources are available in this gist! https://gist.github.com/vedam/cb1fca38d021143a87f59813f36995dc",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/IUHkSoBxyLM/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/IUHkSoBxyLM/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/IUHkSoBxyLM/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/IUHkSoBxyLM/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/IUHkSoBxyLM/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 14,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "IUHkSoBxyLM"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "eUEXXUz_VGylG3qnxeZYnqOSZPI",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS45RTgxNDRBMzUwRjQ0MDhC",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Luke Edwards: Svelte at the Edge",
+			"description": "This was recorded for Svelte Summit 2020: https://www.sveltesummit.com\n\nWill Svelte run inside a Cloudflare Worker? What are the benefits? Are there trade-offs? Can we make this easier?\n\nOpen Collective: https://opencollective.com/svelte",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/CgfF1Otav_o/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/CgfF1Otav_o/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/CgfF1Otav_o/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/CgfF1Otav_o/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/CgfF1Otav_o/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 15,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "CgfF1Otav_o"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "7SLDmoG3FMXsMm8kLbCA3dT-I9M",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS5ENDU4Q0M4RDExNzM1Mjcy",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Dominik. G: Introduction to Svite",
+			"description": "This was recorded for https://www.sveltesummit.com\n\nAn Introduction to Svite and demonstration of its features:\n\n- easy setup with cli\n- ultra fast hot-module-reloading\n- optimized production build\n\nFurther links and resources are available in this gist! https://gist.github.com/vedam/cb1fca38d021143a87f59813f36995dc",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/vn4heLCh-Iw/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/vn4heLCh-Iw/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/vn4heLCh-Iw/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/vn4heLCh-Iw/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/vn4heLCh-Iw/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 16,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "vn4heLCh-Iw"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "1qEWPTWTvDZ6L2sZblWH51M7N68",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS4yMDhBMkNBNjRDMjQxQTg1",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Matthias Stahl: How you setup data visualization with Svelte",
+			"description": "This was recorded for https://www.sveltesummit.com\n\nSvelte is not just a JavaScript compiler. It is a way of thinking to design complex data visualizations. Come with me on a journey through one of my recent Svelte data visualization works.\n\nLean back and I’ll show you the how and the wow!\n\nFurther links and resources are available in this gist! https://gist.github.com/vedam/cb1fca38d021143a87f59813f36995dc",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/xtTrcCp2aVU/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/xtTrcCp2aVU/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/xtTrcCp2aVU/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/xtTrcCp2aVU/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/xtTrcCp2aVU/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 17,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "xtTrcCp2aVU"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "MU4ff1fiQ02SosT-n6nVgnRjHq0",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS5GM0Q3M0MzMzY5NTJFNTdE",
+		"snippet": {
+			"publishedAt": "2020-10-21T08:42:12Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Nicolo Davis: How does Svelte's crossfade function work?",
+			"description": "This was recorded for Svelte Summit 2020: https://www.sveltesummit.com\n\nDeclarative programming is nice. However, actions performed on a web app are imperative. Svelte's crossfade function provides a way to bridge the gap seamlessly.\n\nFurther links and resources are available in this gist! https://gist.github.com/vedam/cb1fca38d021143a87f59813f36995dc",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/wuFEvYW_phA/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/wuFEvYW_phA/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/wuFEvYW_phA/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/wuFEvYW_phA/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/wuFEvYW_phA/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 18,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "wuFEvYW_phA"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "RLe1dXfeA8bnt_XUq2zNbhy4occ",
+		"id": "UEw4Yk1nWDFreVpUaE0xc2JZQ29XZFRjcGlZeXNKc1NldS4zRjM0MkVCRTg0MkYyQTM0",
+		"snippet": {
+			"publishedAt": "2020-10-31T10:06:49Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Benjamin Schachter: Learn Svelte Using React",
+			"description": "This was recorded for https://www.sveltesummit.com but unfortunately didn't make it in due to some technical issues so we're releasing it as a bonus episode! \n\nDescription:\nLet's use mental models we already know to learn Svelte.\n\nLink:\nhttps://twitter.com/benschac\nhttps://www.cs.virginia.edu/~robins/YouAndYourResearch.html\nhttps://www.youtube.com/watch?v=AdNJ3fydeao&feature=youtu.be&t=49 (Rich Harris Talk)\nhttps://svelte.dev/repl/8459f766b4de4e08928d321c65981b5c?version=3.29.0\nhttps://codesandbox.io/s/fast-violet-sm634?file=/src/App.js (before updates)\nhttps://codesandbox.io/s/adoring-ellis-mihhr (after updates)\nhttps://svelte.dev/repl/8459f766b4de4e08928d321c65981b5c?version=3.29.0 (react perf in svelte)\nhttps://svelte.dev/tutorial/keyed-each-blocks (tutorial keyed each block)\nhttps://codesandbox.io/s/sleepy-lovelace-x3fdw?file=/src/App.js:89-134 (React, keyed each block -- example from svelte)\nhttps://github.com/sveltejs/svelte/pull/5225 (documenation PR)\nhttps://www.youtube.com/watch?v=t8svxxtUTl8 (Ken Wheeler Perf Talk)\nhttps://kentcdodds.com/blog/how-i-teach\nhttps://www.amazon.com/Make-Stick-Science-Successful-Learning",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/HHPKc9_BDQw/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/HHPKc9_BDQw/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/HHPKc9_BDQw/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/HHPKc9_BDQw/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/HHPKc9_BDQw/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZThM1sbYCoWdTcpiYysJsSeu",
+			"position": 19,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "HHPKc9_BDQw"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	}
+]

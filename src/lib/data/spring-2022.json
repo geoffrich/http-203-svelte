@@ -1,0 +1,378 @@
+[
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "bLHQprncXhQ179yopR7s670nQJI",
+		"id": "UEw4Yk1nWDFreVpUam9HVkoteGFEMzIwRVJHV3VjcWE0dy41NkI0NEY2RDEwNTU3Q0M2",
+		"snippet": {
+			"publishedAt": "2022-06-26T16:27:42Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "TJ Kohli & Patrick Hultquist - Monogram’s journey building an enterprise grade app with SvelteKit",
+			"description": "Platinum Sponsor:\nMonogram - https://monogram.io\nGraphCMS - https://bit.ly/3Ft8ojy\nVercel - https://vercel.com\n\nGold Sponsors:\nStoryblok - https://bit.ly/3OuJEg4\nArray - https://array.com/company/about-us\nJavaScriptDB - https://javascriptdb.com/?ctx=svelte-summit\nNetlify - https://netlify.com/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nDescription\nRaster is a new application for developers and designers to help them organize, transform, & serve their entire photo library. It has features of every enterprise-grade application — user authentication, complex queries to databases, stateful actions on the front end, a powerful search interface, and interfacing with backend APIs.\n\nThe result is a performant and scalable enterprise grade application to help securely deliver assets with AI recognition that developers, designers, and marketing teams can all love. Because of Svelte and SvelteKit, a high-stakes app like Raster is possible.",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/n4Ui8a9Sh-k/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/n4Ui8a9Sh-k/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/n4Ui8a9Sh-k/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/n4Ui8a9Sh-k/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/n4Ui8a9Sh-k/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTjoGVJ-xaD320ERGWucqa4w",
+			"position": 0,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "n4Ui8a9Sh-k"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "9zOj3LXGB2PH5kAcd0lFFCxFOF4",
+		"id": "UEw4Yk1nWDFreVpUam9HVkoteGFEMzIwRVJHV3VjcWE0dy4yODlGNEE0NkRGMEEzMEQy",
+		"snippet": {
+			"publishedAt": "2022-06-26T16:31:21Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Matthias Stahl - Svelte 4 Data Viz",
+			"description": "Platinum Sponsor:\nMonogram - https://monogram.io\nGraphCMS - https://bit.ly/3Ft8ojy\nVercel - https://vercel.com\n\nGold Sponsors:\nStoryblok - https://bit.ly/3OuJEg4\nArray - https://array.com/company/about-us\nJavaScriptDB - https://javascriptdb.com/?ctx=svelte-summit\nNetlify - https://netlify.com/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nDescription:\nCreating effective and unique data visualizations for news websites requires sophisticated tools. In fact, Svelte is currently becoming a gold standard tool to build interactive graphics for the world’s newsrooms. Why is that and what is so special about Svelte? Come and let’s go on a behind-the-scenes walk into the machine room of a modern interactive data visualization.",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/5focjEPJUJs/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/5focjEPJUJs/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/5focjEPJUJs/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/5focjEPJUJs/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/5focjEPJUJs/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTjoGVJ-xaD320ERGWucqa4w",
+			"position": 1,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "5focjEPJUJs"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "ulgLdkN-Pn8t2usfQn9es4jWAEQ",
+		"id": "UEw4Yk1nWDFreVpUam9HVkoteGFEMzIwRVJHV3VjcWE0dy4wMTcyMDhGQUE4NTIzM0Y5",
+		"snippet": {
+			"publishedAt": "2022-06-26T16:35:18Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Puru Vijay - macOS Web: Why I moved from React to Svelte",
+			"description": "Platinum Sponsor:\nMonogram - https://monogram.io\nGraphCMS - https://bit.ly/3Ft8ojy\nVercel - https://vercel.com\n\nGold Sponsors:\nStoryblok - https://bit.ly/3OuJEg4\nArray - https://array.com/company/about-us\nJavaScriptDB - https://javascriptdb.com/?ctx=svelte-summit\nNetlify - https://netlify.com/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nDescription:\nLearn how moving a web based Operating system from React to Svelte made it tiny and fast! Beyond your wildest dreams.",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/JiKbiXdxm00/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/JiKbiXdxm00/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/JiKbiXdxm00/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/JiKbiXdxm00/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/JiKbiXdxm00/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTjoGVJ-xaD320ERGWucqa4w",
+			"position": 2,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "JiKbiXdxm00"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "3MGo2oExvXdi8KJEjvSYPpVzp7Q",
+		"id": "UEw4Yk1nWDFreVpUam9HVkoteGFEMzIwRVJHV3VjcWE0dy41MjE1MkI0OTQ2QzJGNzNG",
+		"snippet": {
+			"publishedAt": "2022-06-26T16:36:57Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Brittney Postma - Developer Experience is for Everyone",
+			"description": "Platinum Sponsor:\nMonogram - https://monogram.io\nGraphCMS - https://bit.ly/3Ft8ojy\nVercel - https://vercel.com\n\nGold Sponsors:\nStoryblok - https://bit.ly/3OuJEg4\nArray - https://array.com/company/about-us\nJavaScriptDB - https://javascriptdb.com/?ctx=svelte-summit\nNetlify - https://netlify.com/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nDescription:\nHighlight Grainger's journey with Svelte and how the developer experience impacted everyone.",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/kcVRoWHQTeU/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/kcVRoWHQTeU/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/kcVRoWHQTeU/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/kcVRoWHQTeU/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/kcVRoWHQTeU/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTjoGVJ-xaD320ERGWucqa4w",
+			"position": 3,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "kcVRoWHQTeU"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "HQ2_AxC1OvThKLp-hfih-L_Im-s",
+		"id": "UEw4Yk1nWDFreVpUam9HVkoteGFEMzIwRVJHV3VjcWE0dy4wOTA3OTZBNzVEMTUzOTMy",
+		"snippet": {
+			"publishedAt": "2022-06-26T16:41:20Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Scott Beale - Tackle Complex Async Behavior One Step at a Time With Svelte Stores",
+			"description": "Platinum Sponsor:\nMonogram - https://monogram.io\nGraphCMS - https://bit.ly/3Ft8ojy\nVercel - https://vercel.com\n\nGold Sponsors:\nStoryblok - https://bit.ly/3OuJEg4\nArray - https://array.com/company/about-us\nJavaScriptDB - https://javascriptdb.com/?ctx=svelte-summit\nNetlify - https://netlify.com/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nDescription:\nTired of a rat's nest of Promises loading data into your app from different endpoints? Learn to use custom Svelte stores to break apart your problem, maintain reactivity, and eliminate spaghetti code. With these techniques under your belt you will manage your async data as easily as you manage the rest of your application.",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/Rz8Ah1y2hJM/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/Rz8Ah1y2hJM/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/Rz8Ah1y2hJM/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/Rz8Ah1y2hJM/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/Rz8Ah1y2hJM/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTjoGVJ-xaD320ERGWucqa4w",
+			"position": 4,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "Rz8Ah1y2hJM"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "s634fWfM35OUlmqWNePdPphAWF0",
+		"id": "UEw4Yk1nWDFreVpUam9HVkoteGFEMzIwRVJHV3VjcWE0dy4xMkVGQjNCMUM1N0RFNEUx",
+		"snippet": {
+			"publishedAt": "2022-06-26T18:48:20Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Kyohei Hamaguchi - Svelte Native in production",
+			"description": "Platinum Sponsor:\nMonogram - https://monogram.io\nGraphCMS - https://bit.ly/3Ft8ojy\nVercel - https://vercel.com\n\nGold Sponsors:\nStoryblok - https://bit.ly/3OuJEg4\nArray - https://array.com/company/about-us\nJavaScriptDB - https://javascriptdb.com/?ctx=svelte-summit\nNetlify - https://netlify.com/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nDescription:\nI've tried Svelte Native recently for building an iOS/Android app for a web-based app that already built with Svelte, and it was quite successful! In this session, I'm going to show how Svelte Native works (also with NativeScript a little bit), how much you can reuse code from the Svelte-based web counterpart or what exactly you cannot, and how it suites for full-stack engineers thanks to dramatically reduced costs of context switches between web and mobile (since both are in Svelte!).",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/0UwwJSQlKOM/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/0UwwJSQlKOM/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/0UwwJSQlKOM/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/0UwwJSQlKOM/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/0UwwJSQlKOM/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTjoGVJ-xaD320ERGWucqa4w",
+			"position": 5,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "0UwwJSQlKOM"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "l23a7OSN3wpxrytAzAuSMmROMyc",
+		"id": "UEw4Yk1nWDFreVpUam9HVkoteGFEMzIwRVJHV3VjcWE0dy41MzJCQjBCNDIyRkJDN0VD",
+		"snippet": {
+			"publishedAt": "2022-06-26T18:48:53Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Pngwn - Svelte in Motion",
+			"description": "Platinum Sponsor:\nMonogram - https://monogram.io\nGraphCMS - https://bit.ly/3Ft8ojy\nVercel - https://vercel.com\n\nGold Sponsors:\nStoryblok - https://bit.ly/3OuJEg4\nArray - https://array.com/company/about-us\nJavaScriptDB - https://javascriptdb.com/?ctx=svelte-summit\nNetlify - https://netlify.com/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nDescription:\nNative mobile applications are notable for their use of motion to improve UX. We will take a look at what makes these experiences so special and how we might go about bringing them to the web.\n\nIn addition, we will look at some of the challenges, and pitfalls, of implementing native motion-patterns for the web.",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/Exd4nuSBooc/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/Exd4nuSBooc/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/Exd4nuSBooc/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/Exd4nuSBooc/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/Exd4nuSBooc/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTjoGVJ-xaD320ERGWucqa4w",
+			"position": 6,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "Exd4nuSBooc"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	},
+	{
+		"kind": "youtube#playlistItem",
+		"etag": "5YaSnQHPWS370uaFVf9NwNkZnvs",
+		"id": "UEw4Yk1nWDFreVpUam9HVkoteGFEMzIwRVJHV3VjcWE0dy5DQUNERDQ2NkIzRUQxNTY1",
+		"snippet": {
+			"publishedAt": "2022-06-26T18:50:22Z",
+			"channelId": "UCZSr5B0l07JXK2FIeWA0-jw",
+			"title": "Rich Harris - Annoying Things About Svelte",
+			"description": "Platinum Sponsor:\nMonogram - https://monogram.io\nGraphCMS - https://bit.ly/3Ft8ojy\nVercel - https://vercel.com\n\nGold Sponsors:\nStoryblok - https://bit.ly/3OuJEg4\nArray - https://array.com/company/about-us\nJavaScriptDB - https://javascriptdb.com/?ctx=svelte-summit\nNetlify - https://netlify.com/\n\nMusic By:\nFractal - https://soundcloud.com/officialfractal\n\nDescription:\nThings we did that svelte users are annoyed about",
+			"thumbnails": {
+				"default": {
+					"url": "https://i.ytimg.com/vi/dB_YjuAMH3o/default.jpg",
+					"width": 120,
+					"height": 90
+				},
+				"medium": {
+					"url": "https://i.ytimg.com/vi/dB_YjuAMH3o/mqdefault.jpg",
+					"width": 320,
+					"height": 180
+				},
+				"high": {
+					"url": "https://i.ytimg.com/vi/dB_YjuAMH3o/hqdefault.jpg",
+					"width": 480,
+					"height": 360
+				},
+				"standard": {
+					"url": "https://i.ytimg.com/vi/dB_YjuAMH3o/sddefault.jpg",
+					"width": 640,
+					"height": 480
+				},
+				"maxres": {
+					"url": "https://i.ytimg.com/vi/dB_YjuAMH3o/maxresdefault.jpg",
+					"width": 1280,
+					"height": 720
+				}
+			},
+			"channelTitle": "Svelte Society",
+			"playlistId": "PL8bMgX1kyZTjoGVJ-xaD320ERGWucqa4w",
+			"position": 7,
+			"resourceId": {
+				"kind": "youtube#video",
+				"videoId": "dB_YjuAMH3o"
+			},
+			"videoOwnerChannelTitle": "Svelte Society",
+			"videoOwnerChannelId": "UCZSr5B0l07JXK2FIeWA0-jw"
+		}
+	}
+]

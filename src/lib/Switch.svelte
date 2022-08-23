@@ -1,22 +1,21 @@
 <script>
-	import { cohosts } from '$lib/data';
 	/** @type {string?} */
-	export let selectedCohost = null;
+	export let selectedYear = null;
 </script>
 
-<ol class="cohost-switch">
-	<li class:current-cohost={!selectedCohost}>
+<ol class="year-switch">
+	<li class:current-year={!selectedYear}>
 		<a href="/">All</a>
 	</li>
-	{#each cohosts as cohost}
-		<li class:current-cohost={selectedCohost === cohost.toLowerCase()}>
-			<a href={`/with-${cohost.toLowerCase()}/`}>{cohost}</a>
+	{#each ['2022', '2021', '2020'] as year}
+		<li class:current-year={selectedYear === year}>
+			<a href={`/summit-${year}/`}>{year}</a>
 		</li>
 	{/each}
 </ol>
 
 <style lang="postcss">
-	.cohost-switch {
+	.year-switch {
 		display: flex;
 		flex-flow: row wrap;
 		padding: 0;
@@ -39,7 +38,7 @@
 		}
 	}
 
-	.current-cohost {
+	.current-year {
 		& a {
 			background: var(--primary-color);
 			color: #fff;

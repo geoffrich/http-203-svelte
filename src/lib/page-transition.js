@@ -134,13 +134,13 @@ export const TransitionType = {
  * @returns {string}
  */
 function getPageTransitionType(from, to) {
-	if (to.startsWith('/videos/') && (from === '/' || from.startsWith('/with-'))) {
+	if (to.startsWith('/videos/') && (from === '/' || from.startsWith('/summit-'))) {
 		return TransitionType.ThumbsToVideo;
 	}
-	if (from.startsWith('/videos/') && (to === '/' || to.startsWith('/with-'))) {
+	if (from.startsWith('/videos/') && (to === '/' || to.startsWith('/summit-'))) {
 		return TransitionType.VideoToThumbs;
 	}
-	if ((from === '/' || from.startsWith('/with-')) && (to === '/' || to.startsWith('/with-'))) {
+	if ((from === '/' || from.startsWith('/summit-')) && (to === '/' || to.startsWith('/summit-'))) {
 		return TransitionType.ThumbsToThumbs;
 	}
 	if (from.startsWith('/videos/') && to.startsWith('/videos/') && from !== to) {
