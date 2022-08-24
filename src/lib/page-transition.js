@@ -76,7 +76,10 @@ export const afterPageTransition = (fn) => {
 	});
 };
 
-export const preparePageTransition = () => {
+/**
+ * @param {(from: string, to: string) => string?} getType
+ */
+export const preparePageTransition = (getType = (_from, _to) => null) => {
 	const navigation = getNavigationStore();
 	let isReducedMotionEnabled = false;
 
@@ -89,8 +92,7 @@ export const preparePageTransition = () => {
 			return;
 		}
 
-		// TODO: make this configurable
-		const type = getPageTransitionType(from.pathname, to?.pathname ?? '');
+		const type = getType(from.pathname, to?.pathname ?? '');
 		try {
 			const transition = document.createDocumentTransition();
 			const payload = { from, to, type };
@@ -133,7 +135,7 @@ export const TransitionType = {
  * @param {string} to
  * @returns {string}
  */
-function getPageTransitionType(from, to) {
+export function getPageTransitionType(from, to) {
 	if (to.startsWith('/videos/') && (from === '/' || from.startsWith('/summit-'))) {
 		return TransitionType.ThumbsToVideo;
 	}

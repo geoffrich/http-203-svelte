@@ -5,7 +5,8 @@
 		TransitionType,
 		beforePageTransition,
 		afterPageTransition,
-		whileIncomingTransition
+		whileIncomingTransition,
+		getPageTransitionType
 	} from '$lib/page-transition';
 	import { page } from '$app/stores';
 	import { afterNavigate } from '$app/navigation';
@@ -25,7 +26,7 @@
 		}
 	});
 
-	preparePageTransition();
+	preparePageTransition(getPageTransitionType);
 
 	beforePageTransition(({ type }) => {
 		switch (type) {
