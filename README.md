@@ -1,6 +1,6 @@
-# create-svelte
+# http-203-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Recreating the [HTTP 203 Shared Element Transitions demo](https://http203-playlist.netlify.app/) in SvelteKit.
 
 ## Creating a project
 
