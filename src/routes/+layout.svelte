@@ -77,8 +77,7 @@
 	</div>
 </div>
 
-<AnimationTool />
-
+<!-- <AnimationTool /> -->
 <style lang="postcss">
 	.main-layout {
 		height: 100%;
