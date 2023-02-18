@@ -53,10 +53,10 @@
 		background: var(--white);
 		overflow: hidden;
 		contain: paint;
-		page-transition-tag: video-details;
+		view-transition-name: video-details;
 
 		:global(.transition-video-to-video) & {
-			page-transition-tag: none;
+			view-transition-name: none;
 		}
 	}
 
@@ -76,7 +76,7 @@
 		overflow-x: auto;
 		overflow-y: hidden;
 		contain: paint;
-		page-transition-tag: related-videos;
+		view-transition-name: related-videos;
 		min-height: 159px;
 		--video-list-columns: none;
 		--video-list-auto-flow: column;

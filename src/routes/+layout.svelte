@@ -2,9 +2,6 @@
 	import '../app.css';
 	import {
 		preparePageTransition,
-		TransitionType,
-		beforePageTransition,
-		afterPageTransition,
 		whileIncomingTransition,
 		getPageTransitionType
 	} from '$lib/page-transition';
@@ -17,10 +14,10 @@
 
 	afterNavigate(({ from, to }) => {
 		if (
-			(from?.pathname.startsWith('/summit-') || from?.pathname === '/') &&
-			to.pathname.includes('/videos')
+			(from?.url.pathname.startsWith('/summit-') || from?.url.pathname === '/') &&
+			to?.url.pathname.includes('/videos')
 		) {
-			backUrl = from.pathname;
+			backUrl = from.url.pathname;
 		} else {
 			backUrl = '/';
 		}
@@ -28,22 +25,7 @@
 
 	preparePageTransition(getPageTransitionType);
 
-	beforePageTransition(({ type }) => {
-		switch (type) {
-			case TransitionType.ThumbsToVideo:
-				document.documentElement.classList.add('transition-home-to-video');
-				break;
-			case TransitionType.VideoToThumbs:
-				document.documentElement.classList.add('transition-video-to-home');
-				break;
-			case TransitionType.VideoToVideo:
-				document.documentElement.classList.add('transition-video-to-video');
-		}
-		// TODO: apply back transition, somehow
-	});
-
 	whileIncomingTransition(({ to }) => {
-		// TODO: this doesn't run if browser doesn't support transitions
 		// This feels hacky, but it seems to work
 		// Previously, showBackIcon was derived from $page.url.pathname
 		// However, this caused a race condition where the $page store updated
@@ -51,15 +33,6 @@
 		// This will likely be an issue with any shared component on the page that needs to be
 		// derived from the URL and wants to participate in the transition
 		showBackIcon = to.pathname.includes('/videos');
-	});
-
-	afterPageTransition(() => {
-		document.documentElement.classList.remove(
-			'back-transition',
-			'transition-home-to-video',
-			'transition-video-to-home',
-			'transition-video-to-video'
-		);
 	});
 </script>
 
@@ -93,7 +66,7 @@
 		align-items: center;
 		padding: 0 var(--content-padding);
 		contain: paint;
-		page-transition-tag: site-header;
+		view-transition-name: site-header;
 	}
 
 	.show-back-icon.header {
@@ -136,6 +109,6 @@
 	.header-text {
 		display: block;
 		contain: paint;
-		page-transition-tag: header-text;
+		view-transition-name: header-text;
 	}
 </style>

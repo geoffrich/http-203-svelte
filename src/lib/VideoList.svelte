@@ -26,8 +26,8 @@
 
 			if (thumb && details) {
 				elementsToCleanup.push(thumb, details);
-				thumb.style.pageTransitionTag = 'embed-container';
-				details.style.pageTransitionTag = 'video-details';
+				thumb.style.viewTransitionName = 'embed-container';
+				details.style.viewTransitionName = 'video-details';
 			}
 		}
 	});
@@ -45,8 +45,8 @@
 
 			if (thumb && details) {
 				elementsToCleanup.push(thumb, details);
-				thumb.style.pageTransitionTag = 'embed-container';
-				details.style.pageTransitionTag = 'video-details';
+				thumb.style.viewTransitionName = 'embed-container';
+				details.style.viewTransitionName = 'video-details';
 			}
 		}
 	});
@@ -55,7 +55,7 @@
 		while (elementsToCleanup.length) {
 			const el = elementsToCleanup.pop();
 			if (el) {
-				el.style.pageTransitionTag = '';
+				el.style.viewTransitionName = '';
 			}
 		}
 	});

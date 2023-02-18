@@ -102,75 +102,75 @@ a {
 	}
 }
 
-html.transition-home-to-video::page-transition-container(embed-container),
-html.transition-video-to-home::page-transition-container(embed-container) {
+html.transition-home-to-video::view-transition-group(embed-container),
+html.transition-video-to-home::view-transition-group(embed-container) {
 	animation-duration: var(--animation-duration, 300ms);
 	animation-timing-function: ease-out;
 	z-index: 1;
 }
 
-html.transition-home-to-video::page-transition-container(video-details),
-html.transition-video-to-home::page-transition-container(video-details) {
+html.transition-home-to-video::view-transition-group(video-details),
+html.transition-video-to-home::view-transition-group(video-details) {
 	animation-duration: var(--animation-duration, 300ms);
 	animation-timing-function: ease-out;
 	background: #fff;
 	overflow: clip;
 }
 
-html.transition-home-to-video::page-transition-incoming-image(root),
-html.transition-video-to-home::page-transition-outgoing-image(root) {
+html.transition-home-to-video::view-transition-new(root),
+html.transition-video-to-home::view-transition-old(root) {
 	display: none;
 }
 
-html.transition-home-to-video::page-transition-outgoing-image(root),
-html.transition-video-to-home::page-transition-incoming-image(root) {
+html.transition-home-to-video::view-transition-old(root),
+html.transition-video-to-home::view-transition-new(root) {
 	animation: none;
 	opacity: 1;
 	mix-blend-mode: normal;
 }
 
-html.transition-video-to-video::page-transition-incoming-image(root) {
+html.transition-video-to-video::view-transition-new(root) {
 	animation: var(--animation-duration, 500ms) ease-out both slide-from-right;
 }
 
-html.transition-video-to-video::page-transition-outgoing-image(root) {
+html.transition-video-to-video::view-transition-old(root) {
 	animation: var(--animation-duration, 500ms) ease-out both slide-to-left;
 }
 
-html.transition-video-to-video.back-transition::page-transition-incoming-image(root) {
+html.transition-video-to-video.back-transition::view-transition-new(root) {
 	animation-name: slide-from-left;
 }
 
-html.transition-video-to-video.back-transition::page-transition-outgoing-image(root) {
+html.transition-video-to-video.back-transition::view-transition-old(root) {
 	animation-name: slide-to-right;
 }
 
 @media (min-width: 660px) {
-	html.transition-video-to-video::page-transition-incoming-image(root) {
+	html.transition-video-to-video::view-transition-new(root) {
 		animation-name: slide-and-fade-from-right;
 		animation-duration: var(--animation-duration, 300ms);
 	}
 
-	html.transition-video-to-video::page-transition-outgoing-image(root) {
+	html.transition-video-to-video::view-transition-old(root) {
 		animation-name: slide-and-fade-to-left;
 		animation-duration: var(--animation-duration, 300ms);
 	}
 
-	html.transition-video-to-video.back-transition::page-transition-incoming-image(root) {
+	html.transition-video-to-video.back-transition::view-transition-new(root) {
 		animation-name: slide-and-fade-from-left;
 	}
 
-	html.transition-video-to-video.back-transition::page-transition-outgoing-image(root) {
+	html.transition-video-to-video.back-transition::view-transition-old(root) {
 		animation-name: slide-and-fade-to-right;
 	}
 }
 
 @media (min-width: 900px) {
-	html.transition-home-to-video::page-transition-incoming-image(related-videos) {
+	html.transition-home-to-video::view-transition-new(related-videos) {
 		animation: var(--animation-duration, 300ms) ease-out both slide-from-right;
 	}
 
-	html.transition-video-to-home::page-transition-outgoing-image(related-videos) {
+	html.transition-video-to-home::view-transition-old(related-videos) {
 		animation: var(--animation-duration, 300ms) ease-out both slide-to-right;
 	}
 }

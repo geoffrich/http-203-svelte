@@ -76,6 +76,18 @@ export const afterPageTransition = (fn) => {
 	});
 };
 
+function getClassToAdd(type) {
+	switch (type) {
+		case TransitionType.ThumbsToVideo:
+			return 'transition-home-to-video';
+		case TransitionType.VideoToThumbs:
+			return 'transition-video-to-home';
+		case TransitionType.VideoToVideo:
+			return 'transition-video-to-video';
+	}
+	// TODO: apply back transition, somehow
+}
+
 /**
  * @param {(from: string, to: string) => string?} getType
  */
@@ -88,29 +100,24 @@ export const preparePageTransition = (getType = (_from, _to) => null) => {
 	// before navigating, start a new transition
 	beforeNavigate(({ from, to }) => {
 		// Feature detection
-		if (!document.createDocumentTransition || isReducedMotionEnabled) {
-			return;
-		}
+		const type = getType(from?.url.pathname ?? '', to?.url.pathname ?? '');
+		const payload = { from: from?.url, to: to?.url, type };
+		beforeCallbacks.forEach((fn) => fn(payload));
+		// init before starting the transition so the promise doesn't resolve early
+		const navigationComplete = navigation.complete();
+		const className = getClassToAdd(type);
+		const transition = transitionHelper({
+			skipTransition: isReducedMotionEnabled,
+			classNames: className && [className],
+			updateDOM: async () => {
+				await navigationComplete;
+				incomingCallbacks.forEach((fn) => fn(payload));
+			}
+		});
 
-		const type = getType(from.pathname, to?.pathname ?? '');
-		try {
-			const transition = document.createDocumentTransition();
-			const payload = { from, to, type };
-			beforeCallbacks.forEach((fn) => fn(payload));
-			// init before transition.start so the promise doesn't resolve early
-			const navigationComplete = navigation.complete();
-			transition
-				.start(async () => {
-					await navigationComplete;
-					incomingCallbacks.forEach((fn) => fn(payload));
-				})
-				.then(() => {
-					afterCallbacks.forEach((fn) => fn(payload));
-				});
-		} catch (e) {
-			// without the catch, we could throw in beforeNavigate and prevent navigation
-			console.error(e);
-		}
+		transition.finished.finally(() => {
+			afterCallbacks.forEach((fn) => fn(payload));
+		});
 	});
 
 	onDestroy(() => {
@@ -149,4 +156,30 @@ export function getPageTransitionType(from, to) {
 		return TransitionType.VideoToVideo;
 	}
 	return TransitionType.Other;
+}
+
+/**
+ * copied from Jake Archibald's explainer
+ * https://developer.chrome.com/docs/web-platform/view-transitions/#not-a-polyfill
+ * @returns {ViewTransition}
+ */
+function transitionHelper({ skipTransition = false, classNames = [], updateDOM }) {
+	if (skipTransition || !document.startViewTransition) {
+		const updateCallbackDone = Promise.resolve(updateDOM()).then(() => {});
+
+		return {
+			ready: Promise.reject(Error('View transitions unsupported')),
+			updateCallbackDone,
+			finished: updateCallbackDone,
+			skipTransition: () => {}
+		};
+	}
+
+	document.documentElement.classList.add(...classNames);
+
+	const transition = document.startViewTransition(updateDOM);
+
+	transition.finished.finally(() => document.documentElement.classList.remove(...classNames));
+
+	return transition;
 }
