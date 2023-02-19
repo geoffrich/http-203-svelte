@@ -89,25 +89,33 @@ function getClassToAdd(type) {
 }
 
 /**
- * @param {(from: string, to: string) => string?} getType
+ * @param {(navigation: import('@sveltejs/kit').Navigation) => string?} getType
  */
-export const preparePageTransition = (getType = (_from, _to) => null) => {
+export const preparePageTransition = (getType = (_) => null) => {
 	const navigation = getNavigationStore();
 	let isReducedMotionEnabled = false;
 
 	let unsubReducedMotion = reducedMotion.subscribe((val) => (isReducedMotionEnabled = val));
 
 	// before navigating, start a new transition
-	beforeNavigate(({ from, to }) => {
-		const type = getType(from?.url.pathname ?? '', to?.url.pathname ?? '');
+	beforeNavigate((navigationDetail) => {
+		const { from, to, delta = 0 } = navigationDetail;
+		const type = getType(navigationDetail);
 		const payload = { from: from?.url, to: to?.url, type };
 		beforeCallbacks.forEach((fn) => fn(payload));
 		// init before starting the transition so the promise doesn't resolve early
 		const navigationComplete = navigation.complete();
+
+		// TODO: not sure if this belongs here
 		const className = getClassToAdd(type);
+		const classNames = className ? [className] : [];
+		if (delta < 0) {
+			classNames.push('back-transition');
+		}
+
 		const transition = transitionHelper({
 			skipTransition: isReducedMotionEnabled,
-			classNames: className && [className],
+			classNames,
 			updateDOM: async () => {
 				await navigationComplete;
 				incomingCallbacks.forEach((fn) => fn(payload));
@@ -132,16 +140,18 @@ export const TransitionType = {
 	VideoToThumbs: 'videotothumbs',
 	ThumbsToThumbs: 'thumbstothumbs',
 	VideoToVideo: 'videotovideo',
+	Back: 'back',
 	Other: 'other'
 };
 
 /**
- *
- * @param {string} from
- * @param {string} to
+ * @param {import('@sveltejs/kit').Navigation} navigation
  * @returns {string}
  */
-export function getPageTransitionType(from, to) {
+export function getPageTransitionType(navigation) {
+	const to = navigation.to?.url.pathname ?? '';
+	const from = navigation.from?.url.pathname ?? '';
+
 	if (to.startsWith('/videos/') && (from === '/' || from.startsWith('/summit-'))) {
 		return TransitionType.ThumbsToVideo;
 	}
