@@ -1,4 +1,4 @@
-import { beforeNavigate } from '$app/navigation';
+import { beforeNavigate, goto } from '$app/navigation';
 import { navigating } from '$app/stores';
 import { onDestroy } from 'svelte';
 import { derived, writable } from 'svelte/store';
@@ -99,7 +99,10 @@ export const preparePageTransition = (getType = (_) => null) => {
 
 	// before navigating, start a new transition
 	beforeNavigate((navigationDetail) => {
-		const { from, to, delta = 0 } = navigationDetail;
+		const { from, to, delta = 0, cancel, willUnload, type: navigationType } = navigationDetail;
+		if (globalThis.ongoingTransition || willUnload) {
+			return;
+		}
 		const type = getType(navigationDetail);
 		const payload = { from: from?.url, to: to?.url, type };
 		beforeCallbacks.forEach((fn) => fn(payload));
@@ -126,6 +129,16 @@ export const preparePageTransition = (getType = (_) => null) => {
 		transition.finished.finally(() => {
 			afterCallbacks.forEach((fn) => fn(payload));
 		});
+
+		if (navigationType === 'link') {
+			// this is pretty hacky
+			// we need to prevent the new page from loading too quickly
+			// otherwise the transition doesn't happen
+			// this often happens when preload-code="hover"
+			// only do it for links because we want to exclude external site navs and back/forward navigations
+			cancel();
+			new Promise((res) => setTimeout(res, 0)).then(() => goto(to?.url ?? ''));
+		}
 	});
 
 	onDestroy(() => {
