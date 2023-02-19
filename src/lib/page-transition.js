@@ -107,6 +107,7 @@ export const preparePageTransition = (getType = (_) => null) => {
 		const navigationComplete = navigation.complete();
 
 		// TODO: not sure if this belongs here
+		// could try to make it passed as a function somehow
 		const className = getClassToAdd(type);
 		const classNames = className ? [className] : [];
 		if (delta < 0) {
