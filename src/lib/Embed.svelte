@@ -1,6 +1,6 @@
 <script>
 	import { ytSrcset } from '$lib/utils';
-	import { afterPageTransition, beforePageTransition } from './page-transition';
+	import { afterPageTransition, beforePageTransition, TransitionType } from './page-transition';
 
 	/** @type {import('./types').Video}*/
 	export let video;
@@ -10,9 +10,11 @@
 	let iframeReady = false;
 
 	// this previously used a #key, but ran into race conditions with the transition
-	beforePageTransition(() => {
-		renderIframe = false;
-		iframeReady = false;
+	beforePageTransition(({ type }) => {
+		if (type === TransitionType.VideoToVideo) {
+			renderIframe = false;
+			iframeReady = false;
+		}
 	});
 
 	afterPageTransition(() => {

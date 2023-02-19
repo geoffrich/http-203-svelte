@@ -5,6 +5,13 @@
 
 	/** @type {import('./$types').PageData} */
 	export let data;
+
+	/** @type {import('./$types').Snapshot} */
+	export const snapshot = {
+		capture: () => window.scrollY,
+		// restore scroll position when navigating back
+		restore: (scrollY) => window.scrollTo({ top: scrollY })
+	};
 </script>
 
 <svelte:head>
