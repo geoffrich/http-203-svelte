@@ -1,24 +1,35 @@
 <script>
 	import { ytSrcset } from '$lib/utils';
-	import { afterPageTransition, beforePageTransition, TransitionType } from './page-transition';
+	import { onMount } from 'svelte';
+	import { afterPageTransition } from './page-transition';
 
 	/** @type {import('./types').Video}*/
 	export let video;
 
-	// TODO: better way?
-	let renderIframe = !globalThis.ongoingTransition;
+	let renderIframe = true;
 	let iframeReady = false;
-
-	// this previously used a #key, but ran into race conditions with the transition
-	beforePageTransition(({ type }) => {
-		if (type === TransitionType.VideoToVideo) {
-			renderIframe = false;
-			iframeReady = false;
-		}
-	});
 
 	afterPageTransition(() => {
 		renderIframe = true;
+	});
+
+	// this used to use a #key, but ran into race conditions with the transition
+	$: if (video.id) {
+		// when the video changes, reset iframe and ready state
+		setReadyProps();
+	}
+
+	function setReadyProps() {
+		// don't do it on the first render, otherwise the SSR'd version only shows the image
+		if (!firstRender) {
+			renderIframe = false;
+			iframeReady = false;
+		}
+	}
+
+	let firstRender = true;
+	onMount(() => {
+		firstRender = false;
 	});
 </script>
 
