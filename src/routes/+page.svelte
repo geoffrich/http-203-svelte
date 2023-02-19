@@ -3,10 +3,8 @@
 	import { page } from '$app/stores';
 	import VideoList from '$lib/VideoList.svelte';
 
-	// TODO: type this properly (waiting on https://github.com/sveltejs/kit/issues/5951 ?)
-	const videos = $page.data.videos;
-
-	$: selectedYear = $page.params.year;
+	/** @type {import('./$types').PageData} */
+	export let data;
 </script>
 
 <svelte:head>
@@ -14,6 +12,6 @@
 </svelte:head>
 
 <div>
-	<Switch {selectedYear} />
-	<VideoList {videos} />
+	<Switch selectedYear={$page.params.year} />
+	<VideoList videos={data.videos} />
 </div>

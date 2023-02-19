@@ -7,6 +7,7 @@
 	} from './page-transition';
 
 	import { formatDate, ytSrcset } from './utils';
+	/** @type {Record<string, import('./types').Video>}*/
 	export let videos;
 
 	/** @type {HTMLElement[]} */
