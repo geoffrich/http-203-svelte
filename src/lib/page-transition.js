@@ -85,7 +85,7 @@ function getClassToAdd(type) {
 		case TransitionType.VideoToVideo:
 			return 'transition-video-to-video';
 	}
-	// TODO: apply back transition, somehow
+	// TODO: apply back transition using `delta`
 }
 
 /**
@@ -99,7 +99,6 @@ export const preparePageTransition = (getType = (_from, _to) => null) => {
 
 	// before navigating, start a new transition
 	beforeNavigate(({ from, to }) => {
-		// Feature detection
 		const type = getType(from?.url.pathname ?? '', to?.url.pathname ?? '');
 		const payload = { from: from?.url, to: to?.url, type };
 		beforeCallbacks.forEach((fn) => fn(payload));
@@ -179,7 +178,13 @@ function transitionHelper({ skipTransition = false, classNames = [], updateDOM }
 
 	const transition = document.startViewTransition(updateDOM);
 
-	transition.finished.finally(() => document.documentElement.classList.remove(...classNames));
+	// this bit isn't in the explainer version, but is in the HTTP-203 demo
+	globalThis.ongoingTransition = transition;
+
+	transition.finished.finally(() => {
+		document.documentElement.classList.remove(...classNames);
+		globalThis.ongoingTransition = undefined;
+	});
 
 	return transition;
 }

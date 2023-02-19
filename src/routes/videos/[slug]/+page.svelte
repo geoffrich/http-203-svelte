@@ -4,7 +4,10 @@
 	import { formatDate } from '$lib/utils';
 	import { page } from '$app/stores';
 
-	const videos = $page.data.videos;
+	/** @type {import('./$types').PageData} */
+	export let data;
+
+	const videos = data.videos;
 	$: video = videos[$page.params.slug];
 </script>
 

@@ -13,6 +13,7 @@
 	let backUrl = '/';
 
 	afterNavigate(({ from, to }) => {
+		// TODO: not sure if there's a more idiomatic way
 		if (
 			(from?.url.pathname.startsWith('/summit-') || from?.url.pathname === '/') &&
 			to?.url.pathname.includes('/videos')

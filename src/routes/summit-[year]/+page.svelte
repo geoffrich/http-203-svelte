@@ -2,7 +2,6 @@
 	import Switch from '$lib/Switch.svelte';
 	import { page } from '$app/stores';
 	import VideoList from '$lib/VideoList.svelte';
-	import { beforeNavigate } from '$app/navigation';
 
 	const videos = $page.data.videos;
 
