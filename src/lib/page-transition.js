@@ -136,6 +136,7 @@ export const preparePageTransition = (getType = (_) => null) => {
 			// otherwise the transition doesn't happen
 			// this often happens when preload-code="hover"
 			// only do it for links because we want to exclude external site navs and back/forward navigations
+			// TODO: it's still janky on back/forward navs, but history.go doesn't work as expected
 			cancel();
 			new Promise((res) => setTimeout(res, 0)).then(() => goto(to?.url ?? ''));
 		}
