@@ -1,6 +1,6 @@
 # http-203-svelte
 
-Recreating the [HTTP 203 Shared Element Transitions demo](https://http203-playlist.netlify.app/) in SvelteKit.
+Recreating the [HTTP 203 View Transitions demo](https://http203-playlist.netlify.app/) in SvelteKit.
 
 ## Creating a project
 
