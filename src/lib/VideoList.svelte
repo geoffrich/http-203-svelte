@@ -10,55 +10,22 @@
 	/** @type {Record<string, import('./types').Video>}*/
 	export let videos;
 
-	/** @type {HTMLElement[]} */
-	let elementsToCleanup = [];
-
-	/** @type {Record<string, HTMLElement>} */
-	let thumbElements = {};
-	/** @type {Record<string, HTMLElement>} */
-	let metaElements = {};
+	let navigationTarget = '';
 
 	beforePageTransition(({ to, type }) => {
 		if (type === TransitionType.ThumbsToVideo) {
-			/** @type {HTMLElement?} */
-			const thumb = thumbElements[to.pathname];
-			/** @type {HTMLElement?} */
-			const details = metaElements[to.pathname];
-
-			if (thumb && details) {
-				elementsToCleanup.push(thumb, details);
-				thumb.style.viewTransitionName = 'embed-container';
-				details.style.viewTransitionName = 'video-details';
-			}
+			navigationTarget = to.pathname;
 		}
 	});
 
 	whileIncomingTransition(({ from, type }) => {
 		if (type === TransitionType.VideoToThumbs) {
-			// limited by the fact that it needs to work synchronously
-			// any component state needs to wait a tick to apply, and we don't have that time
-			// so we need to interact with the DOM elements directly
-
-			/** @type {HTMLElement?} */
-			const thumb = thumbElements[from.pathname];
-			/** @type {HTMLElement?} */
-			const details = metaElements[from.pathname];
-
-			if (thumb && details) {
-				elementsToCleanup.push(thumb, details);
-				thumb.style.viewTransitionName = 'embed-container';
-				details.style.viewTransitionName = 'video-details';
-			}
+			navigationTarget = from.pathname;
 		}
 	});
 
 	afterPageTransition(() => {
-		while (elementsToCleanup.length) {
-			const el = elementsToCleanup.pop();
-			if (el) {
-				el.style.viewTransitionName = '';
-			}
-		}
+		navigationTarget = '';
 	});
 </script>
 
@@ -71,9 +38,12 @@
 					class="video-thumb"
 					srcset={ytSrcset(video.id)}
 					alt={video.title}
-					bind:this={thumbElements[href]}
+					style:view-transition-name={navigationTarget === href ? 'embed-container' : ''}
 				/>
-				<p class="video-meta" bind:this={metaElements[href]}>
+				<p
+					class="video-meta"
+					style:view-transition-name={navigationTarget === href ? 'video-details' : ''}
+				>
 					<time>{formatDate(new Date(video.published))}</time>
 				</p>
 			</a>

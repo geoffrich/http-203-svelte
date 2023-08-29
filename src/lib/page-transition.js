@@ -1,38 +1,6 @@
-import { beforeNavigate, goto } from '$app/navigation';
-import { navigating } from '$app/stores';
-import { onDestroy } from 'svelte';
-import { derived, writable } from 'svelte/store';
+import { onNavigate } from '$app/navigation';
+import { onDestroy, tick } from 'svelte';
 import reducedMotion from './reduced-motion';
-
-function getNavigationStore() {
-	/** @type {((val?: any) => void)[]} */
-	let callbacks = [];
-
-	const navigation = {
-		...navigating,
-		complete: async () => {
-			await new Promise((res, _) => {
-				callbacks.push(res);
-			});
-		}
-	};
-
-	// This used to subscribe inside the callback, but that resolved the promise too early
-	const unsub = navigating.subscribe((n) => {
-		if (n === null) {
-			while (callbacks.length > 0) {
-				const res = callbacks.pop();
-				res?.();
-			}
-		}
-	});
-
-	onDestroy(() => {
-		unsub();
-	});
-
-	return navigation;
-}
 
 /**
  * @callback pageTransitionCallback
@@ -92,22 +60,18 @@ function getClassToAdd(type) {
  * @param {(navigation: import('@sveltejs/kit').Navigation) => string?} getType
  */
 export const preparePageTransition = (getType = (_) => null) => {
-	const navigation = getNavigationStore();
 	let isReducedMotionEnabled = false;
 
 	let unsubReducedMotion = reducedMotion.subscribe((val) => (isReducedMotionEnabled = val));
 
-	// before navigating, start a new transition
-	beforeNavigate((navigationDetail) => {
-		const { from, to, delta = 0, cancel, willUnload, type: navigationType } = navigationDetail;
+	onNavigate((navigationDetail) => {
+		const { from, to, delta = 0, willUnload } = navigationDetail;
 		if (globalThis.ongoingTransition || willUnload) {
 			return;
 		}
 		const type = getType(navigationDetail);
 		const payload = { from: from?.url, to: to?.url, type };
 		beforeCallbacks.forEach((fn) => fn(payload));
-		// init before starting the transition so the promise doesn't resolve early
-		const navigationComplete = navigation.complete();
 
 		// TODO: not sure if this belongs here
 		// could try to make it passed as a function somehow
@@ -117,29 +81,21 @@ export const preparePageTransition = (getType = (_) => null) => {
 			classNames.push('back-transition');
 		}
 
-		const transition = transitionHelper({
-			skipTransition: isReducedMotionEnabled,
-			classNames,
-			updateDOM: async () => {
-				await navigationComplete;
-				incomingCallbacks.forEach((fn) => fn(payload));
-			}
-		});
+		return new Promise((oldStateCaptureResolve) => {
+			const transition = transitionHelper({
+				skipTransition: isReducedMotionEnabled,
+				classNames,
+				updateDOM: async () => {
+					oldStateCaptureResolve();
+					await navigationDetail.complete;
+					incomingCallbacks.forEach((fn) => fn(payload));
+				}
+			});
 
-		transition.finished.finally(() => {
-			afterCallbacks.forEach((fn) => fn(payload));
+			transition.finished.finally(() => {
+				afterCallbacks.forEach((fn) => fn(payload));
+			});
 		});
-
-		if (navigationType === 'link') {
-			// this is pretty hacky
-			// we need to prevent the new page from loading too quickly
-			// otherwise the transition doesn't happen
-			// this often happens when preload-code="hover"
-			// only do it for links because we want to exclude external site navs and back/forward navigations
-			// TODO: it's still janky on back/forward navs, but history.go doesn't work as expected
-			cancel();
-			new Promise((res) => setTimeout(res, 0)).then(() => goto(to?.url ?? ''));
-		}
 	});
 
 	onDestroy(() => {
